@@ -2,6 +2,10 @@
 
 A Python bot that checks the archived status of GitHub repositories listed in a JSON file, such as [dkhamsing/open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps). It runs weekly via GitHub Actions, updating this README with a table of results.
 
+> [!IMPORTANT]  
+> Under development.
+> Please report any issues!
+
 ## Features
 
 - Fetches repository links from a JSON file, skipping those tagged with "archive".
