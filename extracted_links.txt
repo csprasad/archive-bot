@@ -392,7 +392,6 @@ https://github.com/denissimon/Cryptocurrency-Info
 https://github.com/denissimon/distributed-model-training
 https://github.com/denissimon/iOS-MVVM-Clean-Architecture
 https://github.com/denoni/SpotifyClone
-https://github.com/devxoul/Drrrible
 https://github.com/devxoul/RxTodo
 https://github.com/devxoul/SwiftUITodo
 https://github.com/diogot/MyWeight
