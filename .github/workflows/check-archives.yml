@@ -31,7 +31,7 @@ jobs:
 
       - name: Run archive checker
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python archive_checker.py
 
@@ -43,4 +43,4 @@ jobs:
           git diff --cached --quiet || git commit -m 'Update README with archived repositories'
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
