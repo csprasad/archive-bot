@@ -2,8 +2,8 @@ name: Check Archived Repositories
 
 on:
   schedule:
-    - cron: '0 0 * * 1'  # Runs every Monday at 00:00 UTC
-  workflow_dispatch:  # Allows manual trigger
+    - cron: '0 0 * * 1'  # Every Monday at 00:00 UTC
+  workflow_dispatch:  # Manual trigger
   push:
     branches:
       - main
@@ -12,15 +12,15 @@ jobs:
   check-archives:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # For pushing README.md
-      actions: read    # For running Actions
+      contents: write
+      actions: read
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5.2.0
+        uses: actions/setup-python@v5
         with:
           python-version: '3.9'
 
@@ -39,8 +39,8 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add README.md extracted_links.txt archive_checker.log
-          git commit -m 'Update README with archived repositories' || echo "No changes to commit"
+          git add README.md
+          git diff --cached --quiet || git commit -m 'Update README with archived repositories'
           git push
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
