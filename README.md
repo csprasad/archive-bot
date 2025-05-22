@@ -62,7 +62,6 @@ The bot will:
 |---------------|--------|
 | https://github.com/Chubby-Apps/SafeTimer | Archived |
 | https://github.com/CodeHubApp/CodeHub | Archived |
-| https://github.com/DaidoujiChen/Dai-Hentai | Forbidden (possibly private or rate limit exceeded) |
 | https://github.com/Darktt/HealthKit-Swift | Forbidden (possibly private or rate limit exceeded) |
 | https://github.com/DeluxeAlonso/UpcomingMovies | Forbidden (possibly private or rate limit exceeded) |
 | https://github.com/DerLobi/Depressed | Forbidden (possibly private or rate limit exceeded) |
@@ -333,138 +332,132 @@ The bot will:
 | https://github.com/bither/bither-ios | Error 429 |
 | https://github.com/bitwarden/mobile | Error 429 |
 | https://github.com/blinksh/blink | Error 429 |
-| https://github.com/cds-snc/covid-alert-app | Archived |
-| https://github.com/chadaustin/passdrop | Archived |
-| https://github.com/cocoa-mhlw/cocoa | Archived |
-| https://github.com/corona-warn-app/cwa-app-ios | Archived |
-| https://github.com/covid19cz/erouska-ios | Archived |
-| https://github.com/davedelong/MVCTodo | Archived |
-| https://github.com/denissimon/Cryptocurrency-Info | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/denissimon/distributed-model-training | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/denissimon/iOS-MVVM-Clean-Architecture | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/denoni/SpotifyClone | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/devxoul/RxTodo | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/devxoul/SwiftUITodo | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/diogot/MyWeight | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/dkhamsing/TabDump | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/dkhamsing/covid19.swift | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/dkhamsing/fastmdb | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/dkhamsing/how-much | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/dkhamsing/listapp.ios | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/dkhamsing/news | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/dkhamsing/osia | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/dkhamsing/stocks | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/dkhamsing/upcomingtv | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/dl-alexandre/SymbolGrid | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/donbytyqi/PapersSwiftUI | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/dopebase/messenger-iOS-chat-swift-firestore | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/draese/TwitterSentiment | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/dropbox/PhotoWatch | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/drpeterrohde/MoodSnap | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/duckduckgo/apple-browsers | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/e-mission/e-mission-phone | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/ecrichlow/LootRaideriOS_OS | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/efremidze/Alarm | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/eleev/compositional-layouts-kit | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/eleev/flappy-fly-bird | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/eleev/swiftui-2048 | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/eleev/tic-tac-toe | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/element-hq/element-ios | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/element-hq/element-x-ios | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/elkiwy/KHabit | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/emcro/SwiftUI-Keyboard-Demo | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/emoncms/emoncms-ios | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/emredurukn/betcalsa | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/emufreak/iAmiga | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/enochng1/RaceMe | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/eonist/summon | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/ericjohnson/canabalt-ios | Forbidden (possibly private or rate limit exceeded) |
-| https://github.com/ericlewis/DeltaUI | Error 429 |
-| https://github.com/ericlewis/ShoppingList | Error 429 |
-| https://github.com/essentiaone/Essentia-iOS | Error 429 |
-| https://github.com/ethanhuang13/blahker | Error 429 |
-| https://github.com/ethanhuang13/knil | Error 429 |
-| https://github.com/ethanhuang13/ladybug | Error 429 |
-| https://github.com/ethanswift/DiscussIt | Error 429 |
-| https://github.com/ethanswift/NewsAnalyzer | Error 429 |
-| https://github.com/eugenebokhan/Awesome-ML | Error 429 |
-| https://github.com/exantech/exa-wallet-ios | Error 429 |
-| https://github.com/expo/expo | Error 429 |
-| https://github.com/ezefranca/watchpresenter | Error 429 |
-| https://github.com/fabiensanglard/Shmup | Error 429 |
-| https://github.com/fabienwarniez/Vie | Error 429 |
-| https://github.com/fabio914/BeatmapVisionPro | Error 429 |
-| https://github.com/fangwei716/30-days-of-react-native | Error 429 |
-| https://github.com/fatih-gursoy/Cuisiner | Error 429 |
-| https://github.com/fatih-gursoy/Projector | Error 429 |
-| https://github.com/filipealva/Cepp | Error 429 |
-| https://github.com/fimuxd/BringMyOwnBeer- | Error 429 |
-| https://github.com/fimuxd/BringMyOwnBeer-Combine | Error 429 |
-| https://github.com/fimuxd/GITGET | Error 429 |
-| https://github.com/firebase/friendlyeats-ios | Error 429 |
-| https://github.com/firebase/quickstart-ios | Error 429 |
-| https://github.com/flappy-royale/flappy-royale | Error 429 |
-| https://github.com/fossasia/open-event-attendee-ios | Error 429 |
-| https://github.com/fossasia/open-event-organizer-ios | Error 429 |
-| https://github.com/fossasia/susi_iOS | Error 429 |
-| https://github.com/freeotp/freeotp-ios | Error 429 |
-| https://github.com/freesuraj/TLDR | Error 429 |
-| https://github.com/frogatto/frogatto | Error 429 |
-| https://github.com/fromkk/FreeTimePicker | Error 429 |
-| https://github.com/fromkk/iOSDCRC | Error 429 |
-| https://github.com/frostland/GPS-Stone | Error 429 |
-| https://github.com/fulldecent/8-ball-answer | Error 429 |
-| https://github.com/fulldecent/formant-analyzer | Error 429 |
-| https://github.com/fulldecent/pizzaman | Error 429 |
-| https://github.com/gabrieloc/GIOVANNI | Error 429 |
-| https://github.com/gao0122/ARKit-Example-by-Apple | Error 429 |
-| https://github.com/gdombiak/OctoPod | Error 429 |
-| https://github.com/gematik/E-Rezept-App-iOS | Error 429 |
-| https://github.com/genadyo/WWDC | Error 429 |
-| https://github.com/ghewgill/puzzles | Error 429 |
-| https://github.com/git-up/GitUp | Error 429 |
-| https://github.com/gitpoint/git-point | Error 429 |
-| https://github.com/glushchenko/fsnotes | Error 429 |
-| https://github.com/gonchar/VisionProVacuumDemo | Error 429 |
-| https://github.com/google/mechahamster | Error 429 |
-| https://github.com/googlecast/CastVideos-ios | Error 429 |
-| https://github.com/groue/GRDBCombine | Error 429 |
-| https://github.com/gtokman/Restaurant-Viewing-App | Error 429 |
-| https://github.com/hackfoldr/hackfoldr-iOS | Error 429 |
-| https://github.com/hadobedo/FunkiniOS | Error 429 |
-| https://github.com/haiwen/seafile-iOS | Error 429 |
-| https://github.com/hamed8080/LeitnerBox | Error 429 |
-| https://github.com/hanton/Fisheye | Error 429 |
-| https://github.com/haolloyin/MrCode | Error 429 |
-| https://github.com/hbmartin/Directory-SwiftUI | Error 429 |
-| https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI | Error 429 |
-| https://github.com/herzbube/littlego | Error 429 |
-| https://github.com/heyrahulrs/ASETimerSwiftUI | Error 429 |
-| https://github.com/hilen/TSWeChat | Error 429 |
-| https://github.com/hishd/RicketyRick-iOS | Error 429 |
-| https://github.com/hishd/SkyWizard-SwiftUI | Error 429 |
-| https://github.com/holzschu/a-shell | Error 429 |
-| https://github.com/home-assistant/iOS | Error 429 |
-| https://github.com/horizontalsystems/unstoppable-wallet-ios | Error 429 |
-| https://github.com/hrydgard/ppsspp | Error 429 |
-| https://github.com/huggingface/swift-coreml-transformers | Error 429 |
-| https://github.com/hungps/flutter_pokedex | Error 429 |
-| https://github.com/hyperoslo/BarcodeScanner | Error 429 |
-| https://github.com/iAlexander/Homepok | Error 429 |
-| https://github.com/iAugux/Phonetic | Error 429 |
-| https://github.com/iCHAIT/awesome-macOS | Error 429 |
-| https://github.com/iCepa/iCepa | Error 429 |
-| https://github.com/iKenndac/Tofu | Error 429 |
-| https://github.com/ibhavikmakwana/Fluttery-Filmy | Error 429 |
-| https://github.com/id-Software/DOOM-IOS2 | Error 429 |
-| https://github.com/id-Software/DOOM-iOS | Error 429 |
-| https://github.com/id-Software/Wolf3D-iOS | Error 429 |
-| https://github.com/ifrotz/iosfrotz | Error 429 |
-| https://github.com/igorkulman/iOSSampleApp | Error 429 |
-| https://github.com/igravitystudios/matchimals.fun | Error 429 |
-| https://github.com/ijoshsmith/swift-ascii-art | Error 429 |
-| https://github.com/il1ane/StoicQuotes | Error 429 |
-| https://github.com/illu/moonwalk | Error 429 |
+| https://github.com/bluemix/tourism-demo | Error 429 |
+| https://github.com/bluesky-social/social-app | Error 429 |
+| https://github.com/bouk/HTTPS4All | Error 429 |
+| https://github.com/breadwallet/breadwallet-ios | Error 429 |
+| https://github.com/brittanyarima/MovieDB | Error 429 |
+| https://github.com/brittanyarima/Sketchy | Error 429 |
+| https://github.com/brittanyarima/Steps | Error 429 |
+| https://github.com/burhanrashid52/WhatTodo | Error 429 |
+| https://github.com/c-villain/SneakerShop | Error 429 |
+| https://github.com/cagnulein/qdomyos-zwift | Error 429 |
+| https://github.com/caiobzen/water-reminder-swiftui | Error 429 |
+| https://github.com/camiloibarrayepes/AlamofireStarWarsExample | Error 429 |
+| https://github.com/carson-katri/reddit-swiftui | Error 429 |
+| https://github.com/catalinmiron/react-native-dribbble-app | Error 429 |
+| https://github.com/catrobat/catty | Error 429 |
+| https://github.com/cds-snc/covid-alert-app | Error 429 |
+| https://github.com/chFlorian/DesignRemakes | Error 429 |
+| https://github.com/chadaustin/passdrop | Error 429 |
+| https://github.com/chanify/chanify-ios | Error 429 |
+| https://github.com/chatwoot/chatwoot-mobile-app | Error 429 |
+| https://github.com/cheeaun/hackerweb-native-2 | Error 429 |
+| https://github.com/chockenberry/NowPlayingPlus | Error 429 |
+| https://github.com/chris-swift-dev/Beers | Error 429 |
+| https://github.com/chrisballinger/BLEMeshChat | Error 429 |
+| https://github.com/christianampe/film-ios | Error 429 |
+| https://github.com/chsxf/SKTetris | Error 429 |
+| https://github.com/chunkyguy/PhotoApp | Error 429 |
+| https://github.com/chuongtrh/palette-from-image | Error 429 |
+| https://github.com/cinderella-project/iMast | Error 429 |
+| https://github.com/cl7/Sakura-Fly | Error 429 |
+| https://github.com/cloverstudio/Spika | Error 429 |
+| https://github.com/cocoa-mhlw/cocoa | Error 429 |
+| https://github.com/coderyi/Monkey | Error 429 |
+| https://github.com/colloquy/colloquy | Error 429 |
+| https://github.com/confirmedcode/lockdown-ios | Error 429 |
+| https://github.com/coolioxlr/watchOS-2-heartrate | Error 429 |
+| https://github.com/corona-warn-app/cwa-app-ios | Error 429 |
+| https://github.com/covid19cz/erouska-ios | Error 429 |
+| https://github.com/covidwatchorg/covidwatch-ios-en | Error 429 |
+| https://github.com/cozy/cozy-drive | Error 429 |
+| https://github.com/crafterm/swiftui-app-switcher | Error 429 |
+| https://github.com/criticalmaps/criticalmaps-ios | Error 429 |
+| https://github.com/croossin/Malendar | Error 429 |
+| https://github.com/crspybits/SharedImages | Error 429 |
+| https://github.com/csprasad/Mr-Tip | Error 429 |
+| https://github.com/cuappdev/podcast-ios | Error 429 |
+| https://github.com/cyrildiagne/ar-cutpaste | Error 429 |
+| https://github.com/da3x/GeoLicious | Error 429 |
+| https://github.com/damoonrashidi/bitalarm | Error 429 |
+| https://github.com/daneden/Broadcast | Error 429 |
+| https://github.com/daneden/Solstice | Error 429 |
+| https://github.com/daneden/Zeitgeist | Error 429 |
+| https://github.com/danqing/2048 | Error 429 |
+| https://github.com/dasdom/Tomate | Error 429 |
+| https://github.com/davedelong/MVCTodo | Error 429 |
+| https://github.com/davejacobsen/HapticHaven | Error 429 |
+| https://github.com/dejager/atmos | Error 429 |
+| https://github.com/deltachat/deltachat-ios | Error 429 |
+| https://github.com/dempseyatgithub/MemeMaker | Error 429 |
+| https://github.com/dempseyatgithub/UnofficialSandwiches | Error 429 |
+| https://github.com/denissimon/Cryptocurrency-Info | Error 429 |
+| https://github.com/denissimon/distributed-model-training | Error 429 |
+| https://github.com/denissimon/iOS-MVVM-Clean-Architecture | Error 429 |
+| https://github.com/denoni/SpotifyClone | Error 429 |
+| https://github.com/devxoul/RxTodo | Error 429 |
+| https://github.com/devxoul/SwiftUITodo | Error 429 |
+| https://github.com/diogot/MyWeight | Error 429 |
+| https://github.com/dkhamsing/TabDump | Error 429 |
+| https://github.com/dkhamsing/covid19.swift | Error 429 |
+| https://github.com/dkhamsing/fastmdb | Error 429 |
+| https://github.com/dkhamsing/how-much | Error 429 |
+| https://github.com/dkhamsing/listapp.ios | Error 429 |
+| https://github.com/dkhamsing/news | Error 429 |
+| https://github.com/dkhamsing/osia | Error 429 |
+| https://github.com/dkhamsing/stocks | Error 429 |
+| https://github.com/dkhamsing/upcomingtv | Error 429 |
+| https://github.com/dl-alexandre/SymbolGrid | Error 429 |
+| https://github.com/donbytyqi/PapersSwiftUI | Error 429 |
+| https://github.com/dopebase/messenger-iOS-chat-swift-firestore | Error 429 |
+| https://github.com/draese/TwitterSentiment | Error 429 |
+| https://github.com/dropbox/PhotoWatch | Error 429 |
+| https://github.com/drpeterrohde/MoodSnap | Error 429 |
+| https://github.com/duckduckgo/apple-browsers | Error 429 |
+| https://github.com/e-mission/e-mission-phone | Error 429 |
+| https://github.com/ecrichlow/LootRaideriOS_OS | Error 429 |
+| https://github.com/efremidze/Alarm | Error 429 |
+| https://github.com/gonchar/VisionProVacuumDemo | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/google/mechahamster | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/googlecast/CastVideos-ios | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/groue/GRDBCombine | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/gtokman/Restaurant-Viewing-App | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/hackfoldr/hackfoldr-iOS | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/hadobedo/FunkiniOS | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/haiwen/seafile-iOS | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/hamed8080/LeitnerBox | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/hanton/Fisheye | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/haolloyin/MrCode | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/hbmartin/Directory-SwiftUI | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/herzbube/littlego | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/heyrahulrs/ASETimerSwiftUI | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/hilen/TSWeChat | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/hishd/RicketyRick-iOS | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/hishd/SkyWizard-SwiftUI | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/holzschu/a-shell | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/home-assistant/iOS | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/horizontalsystems/unstoppable-wallet-ios | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/hrydgard/ppsspp | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/huggingface/swift-coreml-transformers | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/hungps/flutter_pokedex | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/hyperoslo/BarcodeScanner | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/iAlexander/Homepok | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/iAugux/Phonetic | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/iCHAIT/awesome-macOS | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/iCepa/iCepa | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/iKenndac/Tofu | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/ibhavikmakwana/Fluttery-Filmy | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/id-Software/DOOM-IOS2 | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/id-Software/DOOM-iOS | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/id-Software/Wolf3D-iOS | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/ifrotz/iosfrotz | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/igorkulman/iOSSampleApp | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/igravitystudios/matchimals.fun | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/ijoshsmith/swift-ascii-art | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/il1ane/StoicQuotes | Forbidden (possibly private or rate limit exceeded) |
+| https://github.com/illu/moonwalk | Forbidden (possibly private or rate limit exceeded) |
 | https://github.com/immich-app/immich | Error 429 |
 | https://github.com/immuni-app/immuni-app-ios | Error 429 |
 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Error 429 |
@@ -846,35 +839,6 @@ The bot will:
 | https://github.com/vincode-io/Humboldt | Error 429 |
 | https://github.com/vincode-io/Zavala | Error 429 |
 | https://github.com/vinhnx/Clendar | Error 429 |
-| https://github.com/wallabag/ios-app | Error 429 |
-| https://github.com/weiran/Hackers | Error 429 |
-| https://github.com/wikimedia/wikipedia-ios | Error 429 |
-| https://github.com/willhains/Kotoba | Error 429 |
-| https://github.com/willowtreeapps/vocable-ios | Error 429 |
-| https://github.com/wireapp/wire-ios | Error 429 |
-| https://github.com/woocommerce/woocommerce-ios | Error 429 |
-| https://github.com/wordpress-mobile/WordPress-iOS | Error 429 |
-| https://github.com/woxtu/SwiftUI-HackerNews | Error 429 |
-| https://github.com/wvabrinskas/PokePal | Error 429 |
-| https://github.com/wwayne/react-native-nba-app | Error 429 |
-| https://github.com/wwdc-family/app | Error 429 |
-| https://github.com/xYello/ThePost | Error 429 |
-| https://github.com/xbmc/xbmc | Error 429 |
-| https://github.com/xcoo/upupu | Error 429 |
-| https://github.com/xpavle00/Habo | Error 429 |
-| https://github.com/yattee/yattee | Error 429 |
-| https://github.com/yichengchen/ATV-Bilibili-demo | Error 429 |
-| https://github.com/ynagatomo/ARDiffMuseum | Error 429 |
-| https://github.com/ynagatomo/ARWallPicture | Error 429 |
-| https://github.com/ynagatomo/ImgGenSD2 | Error 429 |
-| https://github.com/yohannes/Thoughtless | Error 429 |
-| https://github.com/yoshisuga/MAME4iOS | Error 429 |
-| https://github.com/youstanzr/YouTag | Error 429 |
-| https://github.com/yuripetrosyan/Controllers | Error 429 |
-| https://github.com/zackshapiro/SwiftUIAirtableDemo | Error 429 |
-| https://github.com/zehfernandes/wordnote | Error 429 |
-| https://github.com/zulip/zulip-mobile | Error 429 |
-| https://github.com/zydeco/minivmac4ios | Error 429 |
-| https://github.com/zzanehip/The-OldOS-Project | Error 429 |
+| https://github.com/xYello/ThePost | Archived |
 
-*Last updated: 2025-05-22 09:15:48 UTC*
+*Last updated: 2025-05-22 09:26:34 UTC*
