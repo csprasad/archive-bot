@@ -28,7 +28,6 @@ The bot runs weekly via GitHub Actions and updates this README with the latest r
 | https://github.com/Haptic-Apps/Slide-iOS | Archived |
 | https://github.com/HassanElDesouky/VoiceMemosClone | Archived |
 | https://github.com/IvanBogdantsev/Toilet-Radar-Paris | Archived |
-| https://github.com/LumingYin/PDFToKeynote-iOS | Archived |
 | https://github.com/MoralCode/MetricTime | Archived |
 | https://github.com/MoralCode/MiamiSunglasses | Archived |
 | https://github.com/NathanFallet/MorpionTPE-iOS | Archived |
@@ -74,4 +73,4 @@ The bot runs weekly via GitHub Actions and updates this README with the latest r
 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 | https://github.com/xYello/ThePost | Archived |
 
-*Last updated: 2025-05-23 07:36:36 UTC*
+*Last updated: 2025-05-26 01:44:23 UTC*
