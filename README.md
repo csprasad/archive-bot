@@ -35,7 +35,6 @@ The bot runs weekly via GitHub Actions and updates this README with the latest r
 | https://github.com/TUM-Dev/Campus-iOS | Archived |
 | https://github.com/TrustWallet/trust-wallet-ios | Archived |
 | https://github.com/ViniciusDeep/Revill | Archived |
-| https://github.com/YusuFKaan48/News | Not Found |
 | https://github.com/admin-ch/CovidCertificate-App-iOS | Archived |
 | https://github.com/artsy/eidolon | Archived |
 | https://github.com/bartonhammond/snowflake | Archived |
@@ -73,4 +72,4 @@ The bot runs weekly via GitHub Actions and updates this README with the latest r
 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 | https://github.com/xYello/ThePost | Archived |
 
-*Last updated: 2025-05-26 01:44:23 UTC*
+*Last updated: 2025-05-29 02:10:28 UTC*
