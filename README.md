@@ -2,7 +2,7 @@
 
 This bot checks the current archive status of projects listed in awesome collections.
 
-The bot runs weekly via GitHub Actions and updates this README with the latest results.
+The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and updates this README with the latest results.
 
 > [!IMPORTANT] 
 > It currently works with [dkhamsing/open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps), scanning its JSON list to determine if actively listed repositories are archived or unavailable.
@@ -14,7 +14,7 @@ The bot runs weekly via GitHub Actions and updates this README with the latest r
 - Uses the GitHub API to check whether each repository is archived or inaccessible.
 - Updates this README with a markdown table under the `Repository Archive Status` section.
 - Logs any errors, forbidden responses, or rate-limiting issues to `archive_checker.log` for debugging.
-- Runs automatically every week via GitHub Actions, free of cost.
+- Runs automatically every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions.
 
 
 ## Repository Archive Status
