@@ -67,8 +67,9 @@ The bot runs weekly via GitHub Actions and updates this README with the latest r
 | https://github.com/sonsongithub/reddift | Archived |
 | https://github.com/soroushchehresa/iran-coronavirus | Archived |
 | https://github.com/standardnotes/mobile | Archived |
+| https://github.com/thomasokken/free42 | Not Found |
 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 | https://github.com/xYello/ThePost | Archived |
 
-*Last updated: 2025-06-01 01:05:41 UTC*
+*Last updated: 2025-06-03 00:56:23 UTC*
