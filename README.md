@@ -35,7 +35,6 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | https://github.com/TUM-Dev/Campus-iOS | Archived |
 | https://github.com/ViniciusDeep/Revill | Archived |
 | https://github.com/admin-ch/CovidCertificate-App-iOS | Archived |
-| https://github.com/artsy/eidolon | Archived |
 | https://github.com/bartonhammond/snowflake | Archived |
 | https://github.com/bitwarden/mobile | Archived |
 | https://github.com/cds-snc/covid-alert-app | Archived |
@@ -53,12 +52,11 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | https://github.com/ivan-magda/Californication | Archived |
 | https://github.com/ivan-magda/Tagger | Archived |
 | https://github.com/ivan-magda/UpcomingMovies | Archived |
-| https://github.com/kryptco/krypton-ios | Archived |
 | https://github.com/metabolist/metatext | Archived |
 | https://github.com/microdotblog/microblog-ios | Archived |
 | https://github.com/minvws/nl-covid19-notification-app-ios | Archived |
-| https://github.com/mkhrapov/sansumoku | Archived |
-| https://github.com/mkhrapov/ultimate-peg-solitaire | Archived |
+| https://github.com/mkhrapov/sansumoku | Not Found |
+| https://github.com/mkhrapov/ultimate-peg-solitaire | Not Found |
 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
 | https://github.com/netguru/baby-monitor-client-ios | Archived |
 | https://github.com/openfoodfacts/openfoodfacts-ios | Archived |
@@ -71,4 +69,4 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 | https://github.com/xYello/ThePost | Archived |
 
-*Last updated: 2025-06-08 01:00:10 UTC*
+*Last updated: 2025-06-10 00:56:30 UTC*
