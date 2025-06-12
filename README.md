@@ -55,7 +55,6 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | https://github.com/metabolist/metatext | Archived |
 | https://github.com/microdotblog/microblog-ios | Archived |
 | https://github.com/minvws/nl-covid19-notification-app-ios | Archived |
-| https://github.com/mkhrapov/sansumoku | Not Found |
 | https://github.com/mkhrapov/ultimate-peg-solitaire | Not Found |
 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
 | https://github.com/netguru/baby-monitor-client-ios | Archived |
@@ -69,4 +68,4 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 | https://github.com/xYello/ThePost | Archived |
 
-*Last updated: 2025-06-10 00:56:30 UTC*
+*Last updated: 2025-06-12 00:55:27 UTC*
