@@ -23,7 +23,6 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 |---------------|--------|
 | https://github.com/CodeHubApp/CodeHub | Archived |
 | https://github.com/GroupeMINASTE/FMobile-iOS | Archived |
-| https://github.com/Haptic-Apps/Slide-iOS | Archived |
 | https://github.com/HassanElDesouky/VoiceMemosClone | Archived |
 | https://github.com/IvanBogdantsev/Toilet-Radar-Paris | Archived |
 | https://github.com/MoralCode/MetricTime | Archived |
@@ -65,4 +64,4 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 | https://github.com/xYello/ThePost | Archived |
 
-*Last updated: 2025-06-24 00:56:54 UTC*
+*Last updated: 2025-06-26 00:57:56 UTC*
