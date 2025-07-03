@@ -21,7 +21,6 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 
 | Repository URL | Status |
 |---------------|--------|
-| https://github.com/GroupeMINASTE/FMobile-iOS | Archived |
 | https://github.com/IvanBogdantsev/Toilet-Radar-Paris | Archived |
 | https://github.com/MoralCode/MetricTime | Archived |
 | https://github.com/MoralCode/MiamiSunglasses | Archived |
@@ -62,4 +61,4 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 | https://github.com/xYello/ThePost | Archived |
 
-*Last updated: 2025-07-01 01:02:31 UTC*
+*Last updated: 2025-07-03 00:56:22 UTC*
