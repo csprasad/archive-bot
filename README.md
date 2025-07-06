@@ -21,11 +21,9 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 
 | Repository URL | Status |
 |---------------|--------|
-| https://github.com/IvanBogdantsev/Toilet-Radar-Paris | Archived |
 | https://github.com/MoralCode/MetricTime | Archived |
 | https://github.com/MoralCode/MiamiSunglasses | Archived |
 | https://github.com/NathanFallet/MorpionTPE-iOS | Archived |
-| https://github.com/THLfi/koronavilkku-ios | Archived |
 | https://github.com/TUM-Dev/Campus-iOS | Archived |
 | https://github.com/ViniciusDeep/Revill | Archived |
 | https://github.com/admin-ch/CovidCertificate-App-iOS | Archived |
@@ -61,4 +59,4 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 | https://github.com/xYello/ThePost | Archived |
 
-*Last updated: 2025-07-03 00:56:22 UTC*
+*Last updated: 2025-07-06 01:03:37 UTC*
