@@ -57,6 +57,5 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | https://github.com/standardnotes/mobile | Archived |
 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
-| https://github.com/xYello/ThePost | Archived |
 
-*Last updated: 2025-07-06 01:03:37 UTC*
+*Last updated: 2025-07-08 00:58:17 UTC*
