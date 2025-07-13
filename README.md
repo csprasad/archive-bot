@@ -21,7 +21,6 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 
 | Repository URL | Status |
 |---------------|--------|
-| https://github.com/MoralCode/MetricTime | Archived |
 | https://github.com/MoralCode/MiamiSunglasses | Archived |
 | https://github.com/NathanFallet/MorpionTPE-iOS | Archived |
 | https://github.com/TUM-Dev/Campus-iOS | Archived |
@@ -58,4 +57,4 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 
-*Last updated: 2025-07-10 00:57:10 UTC*
+*Last updated: 2025-07-13 01:03:50 UTC*
