@@ -22,7 +22,6 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | Repository URL | Status |
 |---------------|--------|
 | https://github.com/ViniciusDeep/Revill | Archived |
-| https://github.com/admin-ch/CovidCertificate-App-iOS | Archived |
 | https://github.com/bartonhammond/snowflake | Archived |
 | https://github.com/bitwarden/mobile | Archived |
 | https://github.com/cds-snc/covid-alert-app | Archived |
@@ -54,4 +53,4 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 
-*Last updated: 2025-07-22 01:00:44 UTC*
+*Last updated: 2025-07-24 01:00:17 UTC*
