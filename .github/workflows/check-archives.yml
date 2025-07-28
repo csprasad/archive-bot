@@ -10,30 +10,18 @@ on:
 
 jobs:
   check-archives:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      actions: read
+    runs-on: macos-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.9'
-
-      - name: Install dependencies
+      - name: Run ArchiveDetective
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Run archive checker
+          swift build -c release
+          .build/release/ArchiveDetective
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python archive_checker.py
 
       - name: Commit and push changes
         run: |
@@ -42,5 +30,3 @@ jobs:
           git add README.md
           git diff --cached --quiet || git commit -m 'Update README with archived repositories'
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
