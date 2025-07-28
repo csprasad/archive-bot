@@ -26,7 +26,10 @@ jobs:
           swift-version: "5.10.1"
 
       - name: Clean Swift build cache
-        run: swift package clean
+        run: |
+          swift package clean
+          rm -rf .build
+
 
       - name: Build Swift archive bot
         run: swift build -c release
