@@ -12,19 +12,32 @@ enum ReadmeUpdater {
             return
         }
 
+        // Build table content
         var tableLines = [
             "| Repository URL | Status |",
             "|----------------|--------|"
         ]
 
-        for result in results where result.status != nil {
+        let filteredResults = results.filter { $0.status != nil }
+
+        for result in filteredResults {
             tableLines.append("| \(result.url) | \(result.status!) |")
         }
 
-        let timestamp = "*Last updated: \(formattedDate())*"
-        tableLines.append("")
-        tableLines.append(timestamp)
+        // Timestamps
+        let now = formattedDate()
+        let lastUpdated: String
+        if filteredResults.isEmpty {
+            lastUpdated = extractPreviousUpdatedDate(from: content) ?? now
+        } else {
+            lastUpdated = now
+        }
 
+        tableLines.append("") // blank line before timestamps
+        tableLines.append("*Last updated: \(lastUpdated)*")
+        tableLines.append("*Last checked: \(now)*")
+
+        // Inject new section
         let newSection = "\(marker)\n\n" + tableLines.joined(separator: "\n")
         let updatedContent = content[..<markerRange.lowerBound] + newSection
 
@@ -37,5 +50,17 @@ enum ReadmeUpdater {
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss 'UTC'"
         formatter.timeZone = TimeZone(abbreviation: "UTC")
         return formatter.string(from: Date())
+    }
+
+    private static func extractPreviousUpdatedDate(from content: String) -> String? {
+        let pattern = #"\*Last updated: (.*?)\*"#
+        if let match = content.range(of: pattern, options: .regularExpression) {
+            let line = String(content[match])
+            return line
+                .replacingOccurrences(of: "*Last updated: ", with: "")
+                .replacingOccurrences(of: "*", with: "")
+                .trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+        return nil
     }
 }
