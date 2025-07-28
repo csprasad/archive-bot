@@ -20,6 +20,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Clean Swift build cache
+        run: swift package clean
+
       - name: Build Swift archive bot
         run: swift build -c release
 
