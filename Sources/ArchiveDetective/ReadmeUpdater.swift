@@ -8,7 +8,7 @@ enum ReadmeUpdater {
         let content = try String(contentsOfFile: readmePath, encoding: .utf8)
 
         guard let markerRange = content.range(of: marker) else {
-            print("Marker not found in README.")
+            print("Marker not found in README."); fflush(stdout)
             return
         }
 
@@ -42,7 +42,7 @@ enum ReadmeUpdater {
         let updatedContent = content[..<markerRange.lowerBound] + newSection
 
         try updatedContent.write(toFile: readmePath, atomically: true, encoding: .utf8)
-        print("README.md updated.")
+        print("README.md updated."); fflush(stdout)
     }
 
     private static func formattedDate() -> String {
