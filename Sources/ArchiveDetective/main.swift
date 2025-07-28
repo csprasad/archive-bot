@@ -17,7 +17,7 @@ struct ArchiveDetective {
         let repoLinks = RepoExtractor.extract(from: jsonData)
         print("\(repoLinks.count) repositories to check.")
 
-        var results: [RepoStatus] = []
+        var results: [Models.RepoStatus] = []
         for (i, url) in repoLinks.enumerated() {
             print("Checking [\(i + 1)/\(repoLinks.count)]: \(url)")
             let status = await RepoStatusChecker.checkStatus(for: url)

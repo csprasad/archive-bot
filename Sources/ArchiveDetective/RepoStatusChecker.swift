@@ -9,14 +9,14 @@ enum RepoStatusChecker {
         return dict
     }()
 
-    static func checkStatus(for url: String) async -> RepoStatus {
+    static func checkStatus(for url: String) async -> Models.RepoStatus {
         guard let (owner, repo) = parseGitHubURL(url) else {
-            return RepoStatus(url: url, status: "Invalid URL")
+            return Models.RepoStatus(url: url, status: "Invalid URL")
         }
 
         let apiURLString = "\(apiBase)/\(owner)/\(repo)"
         guard let apiURL = URL(string: apiURLString) else {
-            return RepoStatus(url: url, status: "Malformed API URL")
+            return Models.RepoStatus(url: url, status: "Malformed API URL")
         }
 
         var request = URLRequest(url: apiURL)
@@ -25,26 +25,26 @@ enum RepoStatusChecker {
         do {
             let (data, response) = try await URLSession.shared.data(for: request)
             guard let httpResponse = response as? HTTPURLResponse else {
-                return RepoStatus(url: url, status: "Invalid response")
+                return Models.RepoStatus(url: url, status: "Invalid response")
             }
 
             switch httpResponse.statusCode {
             case 200:
                 if let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
                    let isArchived = json["archived"] as? Bool {
-                    return RepoStatus(url: url, status: isArchived ? "Archived" : nil)
+                    return Models.RepoStatus(url: url, status: isArchived ? "Archived" : nil)
                 }
-                return RepoStatus(url: url, status: "Parse Error")
+                return Models.RepoStatus(url: url, status: "Parse Error")
 
             case 404:
-                return RepoStatus(url: url, status: "Not Found")
+                return Models.RepoStatus(url: url, status: "Not Found")
             case 403:
-                return RepoStatus(url: url, status: "Forbidden (rate limit?)")
+                return Models.RepoStatus(url: url, status: "Forbidden (rate limit?)")
             default:
-                return RepoStatus(url: url, status: "Error \(httpResponse.statusCode)")
+                return Models.RepoStatus(url: url, status: "Error \(httpResponse.statusCode)")
             }
         } catch {
-            return RepoStatus(url: url, status: "Exception: \(error.localizedDescription)")
+            return Models.RepoStatus(url: url, status: "Exception: \(error.localizedDescription)")
         }
     }
 

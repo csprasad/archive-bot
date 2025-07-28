@@ -4,7 +4,7 @@ enum ReadmeUpdater {
     static let readmePath = "README.md"
     static let marker = "## Repository Archive Status"
 
-    static func update(with results: [RepoStatus]) throws {
+    static func update(with results: [Models.RepoStatus]) throws {
         let content = try String(contentsOfFile: readmePath, encoding: .utf8)
 
         guard let markerRange = content.range(of: marker) else {
