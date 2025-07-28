@@ -32,7 +32,7 @@ jobs:
 
 
       - name: Build Swift archive bot
-        run: swift build -c release
+        run: swift build -v -c release
 
       - name: Run ArchiveDetective
         env:

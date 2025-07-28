@@ -2,9 +2,8 @@ import Foundation
 
 struct ArchiveDetective {
     static func main() async {
-        print("🧪 ArchiveDetective has started successfully.")
+        print("✅ Minimal main ran!")
         fflush(stdout)
-        exit(0)
 
         // print("Fetching JSON from source..."); fflush(stdout)
 
