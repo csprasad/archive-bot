@@ -2,26 +2,31 @@ name: Check Archived Repositories
 
 on:
   schedule:
-    - cron: '0 0 * * 0,2,4'  # Sun/Tue/Thu at ~00:00 UTC (±5 mins)
-  workflow_dispatch:  # Manual trigger
+    - cron: '0 0 * * 0,2,4'  # Sun/Tue/Thu at 00:00 UTC
+  workflow_dispatch:          # Manual trigger
   push:
     branches:
-      - main
+      - swift-archive-bot
 
 jobs:
   check-archives:
     runs-on: macos-latest
 
+    permissions:
+      contents: write
+      actions: read
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Build Swift archive bot
+        run: swift build -c release
+
       - name: Run ArchiveDetective
-        run: |
-          swift build -c release
-          .build/release/ArchiveDetective
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: .build/release/ArchiveDetective
 
       - name: Commit and push changes
         run: |
@@ -30,3 +35,5 @@ jobs:
           git add README.md
           git diff --cached --quiet || git commit -m 'Update README with archived repositories'
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
