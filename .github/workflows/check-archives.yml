@@ -37,7 +37,13 @@ jobs:
       - name: Run ArchiveDetective
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: .build/release/ArchiveDetective
+        run: |
+          echo "== Running ArchiveDetective =="
+          .build/release/ArchiveDetective > output.log 2>&1
+          echo "== Output Start =="
+          cat output.log
+          echo "== Output End =="
+
 
       - name: Commit and push changes
         run: |
