@@ -38,7 +38,6 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | https://github.com/incipher/einmal | Archived |
 | https://github.com/insidegui/AnimojiStudio | Archived |
 | https://github.com/ivan-magda/Californication | Archived |
-| https://github.com/ivan-magda/Tagger | Archived |
 | https://github.com/metabolist/metatext | Archived |
 | https://github.com/microdotblog/microblog-ios | Archived |
 | https://github.com/minvws/nl-covid19-notification-app-ios | Archived |
@@ -53,4 +52,4 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 
-*Last updated: 2025-07-27 01:04:28 UTC*
+*Last updated: 2025-07-29 01:05:33 UTC*
