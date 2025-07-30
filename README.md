@@ -19,38 +19,38 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 
 ## Repository Archive Status
 
-| Repository URL | Status |
-|----------------|--------|
-| https://github.com/ViniciusDeep/Revill | Archived |
-| https://github.com/TelemetryDeck/TelemetryViewer | Archived |
-| https://github.com/cocoa-mhlw/cocoa | Archived |
-| https://github.com/bartonhammond/snowflake | Archived |
-| https://github.com/bitwarden/mobile | Archived |
-| https://github.com/chadaustin/passdrop | Archived |
-| https://github.com/corona-warn-app/cwa-app-ios | Archived |
-| https://github.com/covid19cz/erouska-ios | Archived |
-| https://github.com/cds-snc/covid-alert-app | Archived |
-| https://github.com/davedelong/MVCTodo | Archived |
-| https://github.com/google/mechahamster | Archived |
-| https://github.com/groue/GRDBCombine | Archived |
-| https://github.com/insidegui/AnimojiStudio | Archived |
-| https://github.com/ivan-magda/Californication | Archived |
-| https://github.com/immuni-app/immuni-app-ios | Archived |
-| https://github.com/incipher/einmal | Archived |
-| https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
-| https://github.com/microdotblog/microblog-ios | Archived |
-| https://github.com/minvws/nl-covid19-notification-app-ios | Archived |
-| https://github.com/mongodb-developer/BlackJackTrainer | Archived |
-| https://github.com/metabolist/metatext | Archived |
-| https://github.com/netguru/baby-monitor-client-ios | Archived |
-| https://github.com/openfoodfacts/openfoodfacts-ios | Archived |
-| https://github.com/razeware/emitron-iOS | Archived |
-| https://github.com/rursache/ToDoList | Archived |
-| https://github.com/soroushchehresa/iran-coronavirus | Archived |
-| https://github.com/sonsongithub/reddift | Archived |
-| https://github.com/tpgoffline/tpg-offline-iOS | Archived |
-| https://github.com/standardnotes/mobile | Archived |
-| https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
+| # | Repository URL | Status |
+|---|----------------|--------|
+| 200 | https://github.com/TelemetryDeck/TelemetryViewer | Archived |
+| 215 | https://github.com/ViniciusDeep/Revill | Archived |
+| 291 | https://github.com/bartonhammond/snowflake | Archived |
+| 324 | https://github.com/bitwarden/mobile | Archived |
+| 339 | https://github.com/corona-warn-app/cwa-app-ios | Archived |
+| 341 | https://github.com/cds-snc/covid-alert-app | Archived |
+| 345 | https://github.com/chadaustin/passdrop | Archived |
+| 346 | https://github.com/cocoa-mhlw/cocoa | Archived |
+| 355 | https://github.com/davedelong/MVCTodo | Archived |
+| 435 | https://github.com/covid19cz/erouska-ios | Archived |
+| 454 | https://github.com/groue/GRDBCombine | Archived |
+| 456 | https://github.com/google/mechahamster | Archived |
+| 500 | https://github.com/immuni-app/immuni-app-ios | Archived |
+| 504 | https://github.com/insidegui/AnimojiStudio | Archived |
+| 506 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
+| 517 | https://github.com/incipher/einmal | Archived |
+| 535 | https://github.com/ivan-magda/Californication | Archived |
+| 626 | https://github.com/metabolist/metatext | Archived |
+| 637 | https://github.com/minvws/nl-covid19-notification-app-ios | Archived |
+| 644 | https://github.com/microdotblog/microblog-ios | Archived |
+| 653 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
+| 669 | https://github.com/netguru/baby-monitor-client-ios | Archived |
+| 717 | https://github.com/openfoodfacts/openfoodfacts-ios | Archived |
+| 745 | https://github.com/razeware/emitron-iOS | Archived |
+| 757 | https://github.com/rursache/ToDoList | Archived |
+| 795 | https://github.com/soroushchehresa/iran-coronavirus | Archived |
+| 812 | https://github.com/sonsongithub/reddift | Archived |
+| 824 | https://github.com/standardnotes/mobile | Archived |
+| 842 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
+| 866 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 
-*Last updated: 2025-07-30 07:46:16 UTC*
-*Last checked: 2025-07-30 07:46:16 UTC*
+*Last updated: July 30, 2025 at 7:57 AM (GMT)*
+*Last checked: July 30, 2025 at 7:57 AM (GMT)*
