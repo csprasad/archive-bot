@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - swift-archive-bot
+      - main
 
 jobs:
   check-archives:
@@ -25,11 +25,11 @@ jobs:
         with:
           swift-version: "5.10.1"
 
-      - name: Build Swift archive bot
+      - name: Build archive_bot
         run: swift build -c release
 
-      - name: Run ArchiveDetective
-        run: .build/release/ArchiveDetective
+      - name: Run archive_bot
+        run: .build/release/archive_bot
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -38,7 +38,7 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add README.md
-          git diff --cached --quiet || git commit -m 'ci(bot): refresh archived repositories list'
+          git diff --cached --quiet || git commit -m 'ci(bot): update archive status table'
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
