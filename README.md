@@ -20,37 +20,37 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 ## Repository Archive Status
 
 | Repository URL | Status |
-|---------------|--------|
-| https://github.com/TelemetryDeck/TelemetryViewer | Archived |
+|----------------|--------|
 | https://github.com/ViniciusDeep/Revill | Archived |
+| https://github.com/TelemetryDeck/TelemetryViewer | Archived |
+| https://github.com/cocoa-mhlw/cocoa | Archived |
 | https://github.com/bartonhammond/snowflake | Archived |
 | https://github.com/bitwarden/mobile | Archived |
-| https://github.com/cds-snc/covid-alert-app | Archived |
 | https://github.com/chadaustin/passdrop | Archived |
-| https://github.com/cocoa-mhlw/cocoa | Archived |
 | https://github.com/corona-warn-app/cwa-app-ios | Archived |
 | https://github.com/covid19cz/erouska-ios | Archived |
+| https://github.com/cds-snc/covid-alert-app | Archived |
 | https://github.com/davedelong/MVCTodo | Archived |
 | https://github.com/google/mechahamster | Archived |
 | https://github.com/groue/GRDBCombine | Archived |
-| https://github.com/immuni-app/immuni-app-ios | Archived |
-| https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
-| https://github.com/incipher/einmal | Archived |
 | https://github.com/insidegui/AnimojiStudio | Archived |
 | https://github.com/ivan-magda/Californication | Archived |
-| https://github.com/ivan-magda/Tagger | Archived |
-| https://github.com/metabolist/metatext | Archived |
+| https://github.com/immuni-app/immuni-app-ios | Archived |
+| https://github.com/incipher/einmal | Archived |
+| https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
 | https://github.com/microdotblog/microblog-ios | Archived |
 | https://github.com/minvws/nl-covid19-notification-app-ios | Archived |
 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
+| https://github.com/metabolist/metatext | Archived |
 | https://github.com/netguru/baby-monitor-client-ios | Archived |
 | https://github.com/openfoodfacts/openfoodfacts-ios | Archived |
 | https://github.com/razeware/emitron-iOS | Archived |
 | https://github.com/rursache/ToDoList | Archived |
-| https://github.com/sonsongithub/reddift | Archived |
 | https://github.com/soroushchehresa/iran-coronavirus | Archived |
-| https://github.com/standardnotes/mobile | Archived |
+| https://github.com/sonsongithub/reddift | Archived |
 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
+| https://github.com/standardnotes/mobile | Archived |
 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 
-*Last updated: 2025-07-27 01:04:28 UTC*
+*Last updated: 2025-07-30 07:46:16 UTC*
+*Last checked: 2025-07-30 07:46:16 UTC*
