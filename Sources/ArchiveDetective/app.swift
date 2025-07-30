@@ -3,47 +3,47 @@ import Foundation
 @main
 struct ArchiveDetective {
     static func main() async {
-        print("Fetching JSON from source..."); fflush(stdout)
-
         let jsonData: [String: Any]
         do {
             jsonData = try await JSONFetcher.fetch()
         } catch {
-            print("Failed to fetch JSON: \(error)"); fflush(stdout)
+            print("Failed to fetch JSON: \(error)")
             return
         }
 
-        print("Extracting GitHub repository links..."); fflush(stdout)
         let repoLinks = RepoExtractor.extract(from: jsonData)
-        print("\(repoLinks.count) repositories to check."); fflush(stdout)
+        print("\(repoLinks.count) repositories to check.")
 
-        let results = try await withThrowingTaskGroup(of: Models.RepoStatus.self) { group -> [Models.RepoStatus] in
-            for url in repoLinks {
-                group.addTask {
-                    return await RepoStatusChecker.checkStatus(for: url)
+        var results: [Models.RepoStatus] = []
+        do {
+            results = try await withThrowingTaskGroup(of: Models.RepoStatus.self) { group -> [Models.RepoStatus] in
+                for url in repoLinks {
+                    group.addTask {
+                        return await RepoStatusChecker.checkStatus(for: url)
+                    }
                 }
-            }
         
-            var all: [Models.RepoStatus] = []
-            for try await result in group {
-                all.append(result)
+                var all: [Models.RepoStatus] = []
+                for try await result in group {
+                    all.append(result)
+                }
+                return all
             }
-            return all
+        } catch {
+            print("Error while checking repository statuses: \(error)")
+            return
         }
 
-        print("Updating README..."); fflush(stdout)
+
         do {
             try ReadmeUpdater.update(with: results)
         } catch {
-            print("Failed to update README: \(error)"); fflush(stdout)
+            print("Failed to update README: \(error)")
         }
 
-        print("\n Summary:"); fflush(stdout)
         let archived = results.filter { $0.status == "Archived" }.count
         let notFound = results.filter { $0.status == "Not Found" }.count
         let forbidden = results.filter { $0.status?.contains("Forbidden") == true }.count
-        print(" Archived: \(archived)"); fflush(stdout)
-        print(" Not Found: \(notFound)"); fflush(stdout)
-        print(" Forbidden: \(forbidden)"); fflush(stdout)
+        print("Archived: \(archived)", "Not Found: \(notFound)", "Forbidden: \(forbidden)")
     }
 }
