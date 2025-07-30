@@ -21,36 +21,36 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 184 | https://github.com/ViniciusDeep/Revill | Archived |
-| 223 | https://github.com/TelemetryDeck/TelemetryViewer | Archived |
-| 277 | https://github.com/bartonhammond/snowflake | Archived |
-| 291 | https://github.com/bitwarden/mobile | Archived |
-| 338 | https://github.com/cocoa-mhlw/cocoa | Archived |
-| 343 | https://github.com/cds-snc/covid-alert-app | Archived |
-| 346 | https://github.com/chadaustin/passdrop | Archived |
-| 349 | https://github.com/corona-warn-app/cwa-app-ios | Archived |
-| 351 | https://github.com/covid19cz/erouska-ios | Archived |
-| 400 | https://github.com/davedelong/MVCTodo | Archived |
-| 462 | https://github.com/groue/GRDBCombine | Archived |
-| 479 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
-| 481 | https://github.com/google/mechahamster | Archived |
-| 485 | https://github.com/insidegui/AnimojiStudio | Archived |
-| 497 | https://github.com/incipher/einmal | Archived |
-| 508 | https://github.com/ivan-magda/Californication | Archived |
-| 509 | https://github.com/immuni-app/immuni-app-ios | Archived |
-| 628 | https://github.com/metabolist/metatext | Archived |
-| 639 | https://github.com/microdotblog/microblog-ios | Archived |
-| 654 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
-| 658 | https://github.com/minvws/nl-covid19-notification-app-ios | Archived |
-| 686 | https://github.com/netguru/baby-monitor-client-ios | Archived |
-| 699 | https://github.com/openfoodfacts/openfoodfacts-ios | Archived |
-| 735 | https://github.com/razeware/emitron-iOS | Archived |
-| 779 | https://github.com/rursache/ToDoList | Archived |
-| 806 | https://github.com/soroushchehresa/iran-coronavirus | Archived |
-| 816 | https://github.com/standardnotes/mobile | Archived |
-| 828 | https://github.com/sonsongithub/reddift | Archived |
-| 850 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
-| 867 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
+| 201 | https://github.com/ViniciusDeep/Revill | Archived |
+| 225 | https://github.com/TelemetryDeck/TelemetryViewer | Archived |
+| 289 | https://github.com/bartonhammond/snowflake | Archived |
+| 321 | https://github.com/bitwarden/mobile | Archived |
+| 334 | https://github.com/cds-snc/covid-alert-app | Archived |
+| 335 | https://github.com/covid19cz/erouska-ios | Archived |
+| 348 | https://github.com/corona-warn-app/cwa-app-ios | Archived |
+| 350 | https://github.com/cocoa-mhlw/cocoa | Archived |
+| 356 | https://github.com/chadaustin/passdrop | Archived |
+| 367 | https://github.com/davedelong/MVCTodo | Archived |
+| 465 | https://github.com/google/mechahamster | Archived |
+| 486 | https://github.com/groue/GRDBCombine | Archived |
+| 489 | https://github.com/incipher/einmal | Archived |
+| 490 | https://github.com/immuni-app/immuni-app-ios | Archived |
+| 494 | https://github.com/insidegui/AnimojiStudio | Archived |
+| 496 | https://github.com/ivan-magda/Californication | Archived |
+| 498 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
+| 642 | https://github.com/minvws/nl-covid19-notification-app-ios | Archived |
+| 650 | https://github.com/microdotblog/microblog-ios | Archived |
+| 652 | https://github.com/metabolist/metatext | Archived |
+| 660 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
+| 684 | https://github.com/netguru/baby-monitor-client-ios | Archived |
+| 728 | https://github.com/openfoodfacts/openfoodfacts-ios | Archived |
+| 743 | https://github.com/razeware/emitron-iOS | Archived |
+| 771 | https://github.com/rursache/ToDoList | Archived |
+| 800 | https://github.com/sonsongithub/reddift | Archived |
+| 808 | https://github.com/soroushchehresa/iran-coronavirus | Archived |
+| 834 | https://github.com/standardnotes/mobile | Archived |
+| 847 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
+| 865 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 
-*Last updated: July 30, 2025 at 9:13 AM (GMT)*
-*Last checked: July 30, 2025 at 9:13 AM (GMT)*
+*Last updated: July 30, 2025 at 9:21 AM (GMT)*
+*Last checked: July 30, 2025 at 9:21 AM (GMT)*
