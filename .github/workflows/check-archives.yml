@@ -2,15 +2,16 @@ name: Check Archived Repositories
 
 on:
   schedule:
-    - cron: '0 0 * * 0,2,4'  # Sun/Tue/Thu at ~00:00 UTC (±5 mins)
-  workflow_dispatch:  # Manual trigger
+    - cron: '0 0 * * 0,2,4'
+  workflow_dispatch:
   push:
     branches:
       - main
 
 jobs:
   check-archives:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
+
     permissions:
       contents: write
       actions: read
@@ -19,28 +20,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up Swift
+        uses: swift-actions/setup-swift@v2
         with:
-          python-version: '3.9'
+          swift-version: "5.10.1"
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+      - name: Build archive_bot
+        run: swift build -c release
 
-      - name: Run archive checker
+      - name: Run archive_bot
+        run: .build/release/archive_bot
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python archive_checker.py
 
       - name: Commit and push changes
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add README.md
-          git diff --cached --quiet || git commit -m 'Update README with archived repositories'
+          git diff --cached --quiet || git commit -m 'ci(bot): update archive status table'
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

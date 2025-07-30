@@ -1,4 +1,6 @@
 # macOS files
+.build/
+.vscode/
 .DS_Store
 
 __pycache__/
