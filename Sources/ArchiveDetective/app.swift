@@ -17,12 +17,18 @@ struct ArchiveDetective {
         let repoLinks = RepoExtractor.extract(from: jsonData)
         print("\(repoLinks.count) repositories to check."); fflush(stdout)
 
-        var results: [Models.RepoStatus] = []
-        for (i, url) in repoLinks.enumerated() {
-            print("Checking [\(i + 1)/\(repoLinks.count)]: \(url)"); fflush(stdout)
-            let status = await RepoStatusChecker.checkStatus(for: url)
-            results.append(status)
-            try? await Task.sleep(nanoseconds: 50_000_000) // 50ms delay
+        let results = try await withThrowingTaskGroup(of: Models.RepoStatus.self) { group -> [Models.RepoStatus] in
+            for url in repoLinks {
+                group.addTask {
+                    return await RepoStatusChecker.checkStatus(for: url)
+                }
+            }
+        
+            var all: [Models.RepoStatus] = []
+            for try await result in group {
+                all.append(result)
+            }
+            return all
         }
 
         print("Updating README..."); fflush(stdout)
