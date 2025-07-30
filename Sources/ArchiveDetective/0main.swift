@@ -1,5 +1,6 @@
 import Foundation
 
+@main
 struct ArchiveDetective {
     static func main() async {
         print("🔥 ArchiveDetective is running")
