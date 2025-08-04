@@ -2,11 +2,8 @@ name: Check Archived Repositories
 
 on:
   schedule:
-    - cron: '0 0 * * 0,2,4'
+    - cron: '0 0 * * 0,2,4'  # (Sun/Tue/Thu at 00:00 UTC)
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 jobs:
   check-archives:
