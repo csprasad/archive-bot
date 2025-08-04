@@ -23,7 +23,9 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
    - Returns a `403` (Forbidden — possibly due to rate limiting)
 
 4. **Generates a Markdown Table**  
-   Repositories identified as archived or inaccessible are listed in this `README.md` table under the `## Repository Archive Status
+   Repositories identified as archived or inaccessible are listed in this `README.md` table under the `
+
+## Repository Archive Status
 
 | # | Repository URL | Status |
 |---|----------------|--------|
