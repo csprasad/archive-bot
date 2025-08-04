@@ -36,11 +36,10 @@ enum ReadmeUpdater {
 
         let now = formattedDate()
         let lastUpdated: String = filteredResults.isEmpty
-            ? extractPreviousUpdatedDate(from: content) ?? now
-            : now
+            ? extractPreviousUpdatedDate(from: content) ?? now : now
 
         tableLines.append("") // blank line before timestamps
-        tableLines.append("*Last updated: \(lastUpdated)*")
+        tableLines.append("*Last updated: \(lastUpdated)*  ")
         tableLines.append("*Last checked: \(now)*")
 
         let newSection = "\(marker)\n\n" + tableLines.joined(separator: "\n")
@@ -52,8 +51,8 @@ enum ReadmeUpdater {
     private static func formattedDate() -> String {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.timeZone = TimeZone(abbreviation: "UTC")
-        formatter.dateFormat = "MMMM d, yyyy 'at' h:mm a (z)"
+        formatter.timeZone = TimeZone(identifier: "UTC")
+        formatter.dateFormat = "MMMM d, yyyy 'at' h:mm a 'UTC'"
         return formatter.string(from: Date())
     }
 
