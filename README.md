@@ -1,21 +1,43 @@
-# Archive Detective Bot for Awesome Projects
+# archive_bot
 
-This bot checks the current archive status of projects listed in awesome collections.
+> A GitHub Action that checks for archived or inaccessible repositories in [dkhamsing/open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps).
 
-The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and updates this README with the latest results.
+## Overview
 
-> [!IMPORTANT] 
-> It currently works with [dkhamsing/open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps), scanning its JSON list to determine if actively listed repositories are archived or unavailable.
+This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps) list accurate by identifying GitHub repositories that have been archived or are no longer available. It scans the list’s `content.json`, skips entries already tagged "archive", and checks the rest via the GitHub API. The results are written to this repo’s `README.md` for easy review.
 
 
 ## How It Works
 
-- Extracts repository URLs from a JSON source (currently using [dkhamsing/open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps)), skipping any entries tagged as "archive".
-- Uses the GitHub API to check whether each repository is archived or inaccessible.
-- Updates this README with a markdown table under the `Repository Archive Status` section.
-- Logs any errors, forbidden responses, or rate-limiting issues to `archive_checker.log` for debugging.
-- Runs automatically every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions.
+1. **Fetches the Source List**  
+   The bot downloads the latest `content.json` file from the [`dkhamsing/open-source-ios-apps`](https://github.com/dkhamsing/open-source-ios-apps) repository.
 
+2. **Filters Out Archived Entries**  
+   Projects already tagged with `"archive"` in the JSON are excluded from further processing. This avoids unnecessary checks.
+
+3. **Validates Repository Status**  
+   For each remaining project, the bot uses the GitHub API to verify whether the repository:
+   - Still exists
+   - Has been archived
+   - Returns a `404` (Not Found)
+   - Returns a `403` (Forbidden — possibly due to rate limiting)
+
+4. **Generates a Markdown Table**  
+   Repositories identified as archived or inaccessible are listed in this `README.md` table under the `## Repository Archive Status` section.
+
+5. **Updates Timestamps**  
+   - A **Last Checked** timestamp (when the scan ran)
+   - A **Last Updated** timestamp (if the table was modified)
+
+## Schedule
+
+- Runs automatically: Every Sunday, Tuesday, and Thursday at 00:00 UTC
+- Can also be triggered manually via the Actions tab
+
+## Notes
+- Only repositories not already marked as "archive" in the upstream JSON are considered.
+- This bot is not a generic linter for awesome lists.
+- It’s purpose-built for helping maintain [`dkhamsing/open-source-ios-apps`](https://github.com/dkhamsing/open-source-ios-apps).
 
 ## Repository Archive Status
 
@@ -52,3 +74,4 @@ The bot runs every Sun/Tue/Thu at ~00:00 UTC (±5 mins) via GitHub Actions and u
 
 *Last updated: August 3, 2025 at 1:03 AM (GMT)*
 *Last checked: August 3, 2025 at 1:03 AM (GMT)*
+
