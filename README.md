@@ -1,4 +1,4 @@
-# archive_bot
+# archive-bot
 
 > A GitHub Action that checks for archived or inaccessible repositories in [dkhamsing/open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps).
 
