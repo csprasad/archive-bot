@@ -22,11 +22,11 @@ jobs:
         with:
           swift-version: "5.10.1"
 
-      - name: Build archive_bot
+      - name: Build archive-bot
         run: swift build -c release
 
       - name: Run archive_bot
-        run: .build/release/archive_bot
+        run: .build/release/archive-bot
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
