@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "archive_bot",
+    name: "archive-bot",
     platforms: [.macOS(.v13)],
     dependencies: [
         // Add any dependencies here
     ],
     targets: [
         .executableTarget(
-            name: "archive_bot",
+            name: "archive-bot",
             dependencies: []
         )
     ]
