@@ -34,34 +34,33 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 199 | https://github.com/ViniciusDeep/Revill | Archived |
-| 300 | https://github.com/bitwarden/mobile | Archived |
-| 323 | https://github.com/cds-snc/covid-alert-app | Archived |
-| 333 | https://github.com/cocoa-mhlw/cocoa | Archived |
-| 335 | https://github.com/chadaustin/passdrop | Archived |
-| 336 | https://github.com/corona-warn-app/cwa-app-ios | Archived |
-| 437 | https://github.com/firebase/friendlyeats-ios | Archived |
-| 449 | https://github.com/groue/GRDBCombine | Archived |
-| 456 | https://github.com/google/mechahamster | Archived |
-| 465 | https://github.com/davedelong/MVCTodo | Archived |
-| 491 | https://github.com/insidegui/AnimojiStudio | Archived |
-| 494 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
-| 498 | https://github.com/incipher/einmal | Archived |
-| 501 | https://github.com/ivan-magda/Californication | Archived |
-| 598 | https://github.com/immuni-app/immuni-app-ios | Archived |
-| 645 | https://github.com/microdotblog/microblog-ios | Archived |
-| 654 | https://github.com/metabolist/metatext | Archived |
-| 658 | https://github.com/netguru/baby-monitor-client-ios | Archived |
-| 663 | https://github.com/minvws/nl-covid19-notification-app-ios | Archived |
-| 675 | https://github.com/openfoodfacts/openfoodfacts-ios | Archived |
-| 713 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
-| 757 | https://github.com/rursache/ToDoList | Archived |
-| 761 | https://github.com/razeware/emitron-iOS | Archived |
-| 797 | https://github.com/soroushchehresa/iran-coronavirus | Archived |
-| 798 | https://github.com/sonsongithub/reddift | Archived |
-| 809 | https://github.com/standardnotes/mobile | Archived |
-| 851 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
-| 876 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
+| 209 | https://github.com/ViniciusDeep/Revill | Archived |
+| 308 | https://github.com/bitwarden/mobile | Archived |
+| 334 | https://github.com/cds-snc/covid-alert-app | Archived |
+| 335 | https://github.com/cocoa-mhlw/cocoa | Archived |
+| 360 | https://github.com/chadaustin/passdrop | Archived |
+| 361 | https://github.com/davedelong/MVCTodo | Archived |
+| 444 | https://github.com/firebase/friendlyeats-ios | Archived |
+| 470 | https://github.com/groue/GRDBCombine | Archived |
+| 473 | https://github.com/google/mechahamster | Archived |
+| 495 | https://github.com/insidegui/AnimojiStudio | Archived |
+| 496 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
+| 502 | https://github.com/immuni-app/immuni-app-ios | Archived |
+| 507 | https://github.com/incipher/einmal | Archived |
+| 511 | https://github.com/ivan-magda/Californication | Archived |
+| 625 | https://github.com/metabolist/metatext | Archived |
+| 629 | https://github.com/microdotblog/microblog-ios | Archived |
+| 632 | https://github.com/minvws/nl-covid19-notification-app-ios | Archived |
+| 679 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
+| 694 | https://github.com/openfoodfacts/openfoodfacts-ios | Archived |
+| 725 | https://github.com/netguru/baby-monitor-client-ios | Archived |
+| 746 | https://github.com/razeware/emitron-iOS | Archived |
+| 751 | https://github.com/rursache/ToDoList | Archived |
+| 795 | https://github.com/sonsongithub/reddift | Archived |
+| 804 | https://github.com/soroushchehresa/iran-coronavirus | Archived |
+| 811 | https://github.com/standardnotes/mobile | Archived |
+| 856 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
+| 869 | https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public | Archived |
 
-*Last updated: August 5, 2025 at 12:59 AM UTC*  
-*Last checked: August 5, 2025 at 12:59 AM UTC*
+*Last updated: August 7, 2025 at 12:59 AM UTC*  
+*Last checked: August 7, 2025 at 12:59 AM UTC*
