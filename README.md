@@ -34,30 +34,29 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 217 | https://github.com/ViniciusDeep/Revill | Archived |
-| 308 | https://github.com/bitwarden/mobile | Archived |
-| 323 | https://github.com/chadaustin/passdrop | Archived |
-| 331 | https://github.com/cocoa-mhlw/cocoa | Archived |
-| 359 | https://github.com/davedelong/MVCTodo | Archived |
-| 424 | https://github.com/firebase/friendlyeats-ios | Archived |
-| 450 | https://github.com/google/mechahamster | Archived |
-| 454 | https://github.com/groue/GRDBCombine | Archived |
-| 485 | https://github.com/incipher/einmal | Archived |
-| 495 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
-| 514 | https://github.com/immuni-app/immuni-app-ios | Archived |
-| 524 | https://github.com/ivan-magda/Californication | Archived |
-| 529 | https://github.com/insidegui/AnimojiStudio | Archived |
-| 624 | https://github.com/metabolist/metatext | Archived |
-| 630 | https://github.com/microdotblog/microblog-ios | Archived |
-| 641 | https://github.com/minvws/nl-covid19-notification-app-ios | Archived |
-| 650 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
-| 657 | https://github.com/netguru/baby-monitor-client-ios | Archived |
-| 712 | https://github.com/openfoodfacts/openfoodfacts-ios | Archived |
-| 733 | https://github.com/razeware/emitron-iOS | Archived |
-| 764 | https://github.com/rursache/ToDoList | Archived |
-| 800 | https://github.com/sonsongithub/reddift | Archived |
-| 807 | https://github.com/standardnotes/mobile | Archived |
-| 836 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
+| 210 | https://github.com/ViniciusDeep/Revill | Archived |
+| 307 | https://github.com/bitwarden/mobile | Archived |
+| 342 | https://github.com/cocoa-mhlw/cocoa | Archived |
+| 352 | https://github.com/chadaustin/passdrop | Archived |
+| 369 | https://github.com/davedelong/MVCTodo | Archived |
+| 439 | https://github.com/groue/GRDBCombine | Archived |
+| 464 | https://github.com/firebase/friendlyeats-ios | Archived |
+| 469 | https://github.com/google/mechahamster | Archived |
+| 487 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
+| 493 | https://github.com/insidegui/AnimojiStudio | Archived |
+| 504 | https://github.com/incipher/einmal | Archived |
+| 506 | https://github.com/immuni-app/immuni-app-ios | Archived |
+| 516 | https://github.com/ivan-magda/Californication | Archived |
+| 636 | https://github.com/metabolist/metatext | Archived |
+| 637 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
+| 658 | https://github.com/netguru/baby-monitor-client-ios | Archived |
+| 659 | https://github.com/microdotblog/microblog-ios | Archived |
+| 700 | https://github.com/openfoodfacts/openfoodfacts-ios | Archived |
+| 756 | https://github.com/rursache/ToDoList | Archived |
+| 762 | https://github.com/razeware/emitron-iOS | Archived |
+| 799 | https://github.com/sonsongithub/reddift | Archived |
+| 804 | https://github.com/standardnotes/mobile | Archived |
+| 835 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
 
-*Last updated: August 10, 2025 at 1:01 AM UTC*  
-*Last checked: August 10, 2025 at 1:01 AM UTC*
+*Last updated: August 12, 2025 at 12:53 AM UTC*  
+*Last checked: August 12, 2025 at 12:53 AM UTC*
