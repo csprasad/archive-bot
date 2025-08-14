@@ -34,29 +34,28 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 210 | https://github.com/ViniciusDeep/Revill | Archived |
-| 307 | https://github.com/bitwarden/mobile | Archived |
-| 342 | https://github.com/cocoa-mhlw/cocoa | Archived |
-| 352 | https://github.com/chadaustin/passdrop | Archived |
-| 369 | https://github.com/davedelong/MVCTodo | Archived |
-| 439 | https://github.com/groue/GRDBCombine | Archived |
-| 464 | https://github.com/firebase/friendlyeats-ios | Archived |
-| 469 | https://github.com/google/mechahamster | Archived |
-| 487 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
-| 493 | https://github.com/insidegui/AnimojiStudio | Archived |
-| 504 | https://github.com/incipher/einmal | Archived |
-| 506 | https://github.com/immuni-app/immuni-app-ios | Archived |
-| 516 | https://github.com/ivan-magda/Californication | Archived |
-| 636 | https://github.com/metabolist/metatext | Archived |
-| 637 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
-| 658 | https://github.com/netguru/baby-monitor-client-ios | Archived |
-| 659 | https://github.com/microdotblog/microblog-ios | Archived |
-| 700 | https://github.com/openfoodfacts/openfoodfacts-ios | Archived |
-| 756 | https://github.com/rursache/ToDoList | Archived |
-| 762 | https://github.com/razeware/emitron-iOS | Archived |
-| 799 | https://github.com/sonsongithub/reddift | Archived |
-| 804 | https://github.com/standardnotes/mobile | Archived |
-| 835 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
+| 211 | https://github.com/ViniciusDeep/Revill | Archived |
+| 317 | https://github.com/bitwarden/mobile | Archived |
+| 330 | https://github.com/cocoa-mhlw/cocoa | Archived |
+| 340 | https://github.com/davedelong/MVCTodo | Archived |
+| 349 | https://github.com/chadaustin/passdrop | Archived |
+| 427 | https://github.com/firebase/friendlyeats-ios | Archived |
+| 450 | https://github.com/google/mechahamster | Archived |
+| 469 | https://github.com/groue/GRDBCombine | Archived |
+| 489 | https://github.com/incipher/einmal | Archived |
+| 495 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
+| 496 | https://github.com/insidegui/AnimojiStudio | Archived |
+| 508 | https://github.com/immuni-app/immuni-app-ios | Archived |
+| 509 | https://github.com/ivan-magda/Californication | Archived |
+| 626 | https://github.com/metabolist/metatext | Archived |
+| 648 | https://github.com/microdotblog/microblog-ios | Archived |
+| 675 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
+| 676 | https://github.com/netguru/baby-monitor-client-ios | Archived |
+| 705 | https://github.com/openfoodfacts/openfoodfacts-ios | Archived |
+| 765 | https://github.com/razeware/emitron-iOS | Archived |
+| 790 | https://github.com/sonsongithub/reddift | Archived |
+| 806 | https://github.com/standardnotes/mobile | Archived |
+| 840 | https://github.com/tpgoffline/tpg-offline-iOS | Archived |
 
-*Last updated: August 12, 2025 at 12:53 AM UTC*  
-*Last checked: August 12, 2025 at 12:53 AM UTC*
+*Last updated: August 14, 2025 at 3:23 AM UTC*  
+*Last checked: August 14, 2025 at 3:23 AM UTC*
