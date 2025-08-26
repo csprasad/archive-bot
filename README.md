@@ -34,22 +34,22 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 198 | https://github.com/ViniciusDeep/Revill | Archived |
-| 303 | https://github.com/bitwarden/mobile | Archived |
-| 319 | https://github.com/chadaustin/passdrop | Archived |
-| 338 | https://github.com/cocoa-mhlw/cocoa | Archived |
-| 436 | https://github.com/firebase/friendlyeats-ios | Archived |
-| 443 | https://github.com/groue/GRDBCombine | Archived |
-| 462 | https://github.com/google/mechahamster | Archived |
-| 483 | https://github.com/insidegui/AnimojiStudio | Archived |
-| 492 | https://github.com/incipher/einmal | Archived |
-| 497 | https://github.com/immuni-app/immuni-app-ios | Archived |
-| 561 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
-| 618 | https://github.com/metabolist/metatext | Archived |
-| 625 | https://github.com/microdotblog/microblog-ios | Archived |
-| 652 | https://github.com/netguru/baby-monitor-client-ios | Archived |
-| 661 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
-| 728 | https://github.com/razeware/emitron-iOS | Archived |
+| 189 | https://github.com/ViniciusDeep/Revill | Archived |
+| 329 | https://github.com/cocoa-mhlw/cocoa | Archived |
+| 334 | https://github.com/chadaustin/passdrop | Archived |
+| 442 | https://github.com/groue/GRDBCombine | Archived |
+| 450 | https://github.com/firebase/friendlyeats-ios | Archived |
+| 451 | https://github.com/google/mechahamster | Archived |
+| 475 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
+| 492 | https://github.com/insidegui/AnimojiStudio | Archived |
+| 493 | https://github.com/incipher/einmal | Archived |
+| 509 | https://github.com/immuni-app/immuni-app-ios | Archived |
+| 625 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
+| 626 | https://github.com/microdotblog/microblog-ios | Archived |
+| 628 | https://github.com/metabolist/metatext | Archived |
+| 662 | https://github.com/netguru/baby-monitor-client-ios | Archived |
+| 742 | https://github.com/razeware/emitron-iOS | Archived |
+| 826 | https://github.com/saulamsal/netflix-ui | Forbidden (rate limit?) |
 
-*Last updated: August 24, 2025 at 12:57 AM UTC*  
-*Last checked: August 24, 2025 at 12:57 AM UTC*
+*Last updated: August 26, 2025 at 12:52 AM UTC*  
+*Last checked: August 26, 2025 at 12:52 AM UTC*
