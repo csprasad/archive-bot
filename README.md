@@ -34,20 +34,20 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 215 | https://github.com/ViniciusDeep/Revill | Archived |
-| 338 | https://github.com/cocoa-mhlw/cocoa | Archived |
-| 352 | https://github.com/chadaustin/passdrop | Archived |
-| 445 | https://github.com/google/mechahamster | Archived |
-| 450 | https://github.com/groue/GRDBCombine | Archived |
-| 477 | https://github.com/firebase/friendlyeats-ios | Archived |
-| 484 | https://github.com/incipher/einmal | Archived |
-| 509 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
-| 515 | https://github.com/immuni-app/immuni-app-ios | Archived |
-| 612 | https://github.com/metabolist/metatext | Archived |
-| 658 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
-| 659 | https://github.com/netguru/baby-monitor-client-ios | Archived |
-| 667 | https://github.com/microdotblog/microblog-ios | Archived |
-| 757 | https://github.com/razeware/emitron-iOS | Archived |
+| 209 | https://github.com/ViniciusDeep/Revill | Archived |
+| 348 | https://github.com/cocoa-mhlw/cocoa | Archived |
+| 351 | https://github.com/chadaustin/passdrop | Archived |
+| 431 | https://github.com/firebase/friendlyeats-ios | Archived |
+| 455 | https://github.com/google/mechahamster | Archived |
+| 468 | https://github.com/groue/GRDBCombine | Archived |
+| 478 | https://github.com/incipher/einmal | Archived |
+| 491 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
+| 502 | https://github.com/immuni-app/immuni-app-ios | Archived |
+| 617 | https://github.com/metabolist/metatext | Archived |
+| 624 | https://github.com/microdotblog/microblog-ios | Archived |
+| 642 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
+| 662 | https://github.com/netguru/baby-monitor-client-ios | Archived |
+| 730 | https://github.com/razeware/emitron-iOS | Archived |
 
-*Last updated: August 28, 2025 at 12:49 AM UTC*  
-*Last checked: August 28, 2025 at 12:49 AM UTC*
+*Last updated: August 31, 2025 at 12:53 AM UTC*  
+*Last checked: August 31, 2025 at 12:53 AM UTC*
