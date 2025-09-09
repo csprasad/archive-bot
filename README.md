@@ -34,18 +34,17 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 322 | https://github.com/chadaustin/passdrop | Archived |
-| 341 | https://github.com/cocoa-mhlw/cocoa | Archived |
-| 417 | https://github.com/firebase/friendlyeats-ios | Archived |
-| 437 | https://github.com/google/mechahamster | Archived |
-| 466 | https://github.com/groue/GRDBCombine | Archived |
-| 496 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
-| 501 | https://github.com/immuni-app/immuni-app-ios | Archived |
-| 503 | https://github.com/incipher/einmal | Archived |
-| 615 | https://github.com/microdotblog/microblog-ios | Archived |
-| 634 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
-| 665 | https://github.com/netguru/baby-monitor-client-ios | Archived |
-| 744 | https://github.com/razeware/emitron-iOS | Archived |
+| 335 | https://github.com/chadaustin/passdrop | Archived |
+| 437 | https://github.com/firebase/friendlyeats-ios | Archived |
+| 450 | https://github.com/google/mechahamster | Archived |
+| 483 | https://github.com/incipher/einmal | Archived |
+| 487 | https://github.com/groue/GRDBCombine | Archived |
+| 489 | https://github.com/immuni-app/immuni-app-ios | Archived |
+| 491 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
+| 625 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
+| 636 | https://github.com/microdotblog/microblog-ios | Archived |
+| 669 | https://github.com/netguru/baby-monitor-client-ios | Archived |
+| 746 | https://github.com/razeware/emitron-iOS | Archived |
 
-*Last updated: September 7, 2025 at 12:53 AM UTC*  
-*Last checked: September 7, 2025 at 12:53 AM UTC*
+*Last updated: September 9, 2025 at 12:48 AM UTC*  
+*Last checked: September 9, 2025 at 12:48 AM UTC*
