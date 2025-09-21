@@ -34,12 +34,12 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 476 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
-| 486 | https://github.com/immuni-app/immuni-app-ios | Archived |
-| 490 | https://github.com/jdisho/Papr | Archived |
-| 630 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
-| 632 | https://github.com/microdotblog/microblog-ios | Archived |
-| 644 | https://github.com/netguru/baby-monitor-client-ios | Archived |
+| 479 | https://github.com/immuni-app/immuni-app-ios | Archived |
+| 483 | https://github.com/huggingface/swift-coreml-transformers | Archived |
+| 486 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
+| 626 | https://github.com/mongodb-developer/BlackJackTrainer | Archived |
+| 631 | https://github.com/microdotblog/microblog-ios | Archived |
+| 657 | https://github.com/netguru/baby-monitor-client-ios | Archived |
 
-*Last updated: September 18, 2025 at 12:46 AM UTC*  
-*Last checked: September 18, 2025 at 12:46 AM UTC*
+*Last updated: September 21, 2025 at 12:54 AM UTC*  
+*Last checked: September 21, 2025 at 12:54 AM UTC*
