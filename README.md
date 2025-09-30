@@ -34,11 +34,9 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 484 | https://github.com/huggingface/swift-coreml-transformers | Archived |
-| 485 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
-| 495 | https://github.com/immuni-app/immuni-app-ios | Archived |
-| 642 | https://github.com/netguru/baby-monitor-client-ios | Archived |
-| 815 | https://github.com/passepartoutvpn/passepartout | Forbidden (rate limit?) |
+| 476 | https://github.com/huggingface/swift-coreml-transformers | Archived |
+| 490 | https://github.com/inamiy/Harvest-SwiftUI-Gallery | Archived |
+| 662 | https://github.com/netguru/baby-monitor-client-ios | Archived |
 
-*Last updated: September 28, 2025 at 12:54 AM UTC*  
-*Last checked: September 28, 2025 at 12:54 AM UTC*
+*Last updated: September 30, 2025 at 12:49 AM UTC*  
+*Last checked: September 30, 2025 at 12:49 AM UTC*
