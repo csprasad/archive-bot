@@ -34,8 +34,7 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 474 | https://github.com/huggingface/swift-coreml-transformers | Archived |
-| 680 | https://github.com/netguru/baby-monitor-client-ios | Archived |
+| 468 | https://github.com/huggingface/swift-coreml-transformers | Archived |
 
-*Last updated: October 2, 2025 at 12:47 AM UTC*  
-*Last checked: October 2, 2025 at 12:47 AM UTC*
+*Last updated: October 5, 2025 at 12:53 AM UTC*  
+*Last checked: October 5, 2025 at 12:53 AM UTC*
