@@ -34,7 +34,6 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 468 | https://github.com/huggingface/swift-coreml-transformers | Archived |
 
 *Last updated: October 5, 2025 at 12:53 AM UTC*  
-*Last checked: October 5, 2025 at 12:53 AM UTC*
+*Last checked: October 7, 2025 at 12:47 AM UTC*
