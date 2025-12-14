@@ -34,7 +34,7 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 803 | https://github.com/status-im/status-mobile | Forbidden (rate limit?) |
+| 814 | https://github.com/status-im/status-mobile | Forbidden (rate limit?) |
 
-*Last updated: December 11, 2025 at 12:56 AM UTC*  
-*Last checked: December 11, 2025 at 12:56 AM UTC*
+*Last updated: December 14, 2025 at 1:00 AM UTC*  
+*Last checked: December 14, 2025 at 1:00 AM UTC*
