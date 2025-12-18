@@ -34,7 +34,6 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 827 | https://github.com/sbhjt-gr/inferra | Forbidden (rate limit?) |
 
 *Last updated: December 16, 2025 at 12:56 AM UTC*  
-*Last checked: December 16, 2025 at 12:56 AM UTC*
+*Last checked: December 18, 2025 at 12:53 AM UTC*
