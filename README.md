@@ -34,6 +34,7 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
+| 821 | https://github.com/Jigsaw-Code/outline-apps | Forbidden (rate limit?) |
 
-*Last updated: December 16, 2025 at 12:56 AM UTC*  
-*Last checked: December 18, 2025 at 12:53 AM UTC*
+*Last updated: December 21, 2025 at 1:00 AM UTC*  
+*Last checked: December 21, 2025 at 1:00 AM UTC*
