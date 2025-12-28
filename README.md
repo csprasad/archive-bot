@@ -34,6 +34,7 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
+| 609 | https://github.com/mperovic/my41 | Not Found |
 
-*Last updated: December 21, 2025 at 1:00 AM UTC*  
-*Last checked: December 25, 2025 at 12:55 AM UTC*
+*Last updated: December 28, 2025 at 1:02 AM UTC*  
+*Last checked: December 28, 2025 at 1:02 AM UTC*
