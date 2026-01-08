@@ -34,7 +34,8 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 610 | https://github.com/mperovic/my41 | Not Found |
+| 723 | https://github.com/ritwiktakkar/shorten_my_URL | Not Found |
+| 726 | https://github.com/ritwiktakkar/WordDefiner | Not Found |
 
-*Last updated: January 6, 2026 at 12:58 AM UTC*  
-*Last checked: January 6, 2026 at 12:58 AM UTC*
+*Last updated: January 8, 2026 at 12:58 AM UTC*  
+*Last checked: January 8, 2026 at 12:58 AM UTC*
