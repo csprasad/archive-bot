@@ -34,8 +34,7 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 359 | https://github.com/diogot/MyWeight | Archived |
-| 701 | https://github.com/ritwiktakkar/shorten_my_URL | Not Found |
+| 817 | https://github.com/rarfell/dimeApp | Forbidden (rate limit?) |
 
-*Last updated: January 11, 2026 at 1:02 AM UTC*  
-*Last checked: January 11, 2026 at 1:02 AM UTC*
+*Last updated: January 13, 2026 at 12:54 AM UTC*  
+*Last checked: January 13, 2026 at 12:54 AM UTC*
