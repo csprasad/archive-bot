@@ -34,7 +34,6 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 817 | https://github.com/rarfell/dimeApp | Forbidden (rate limit?) |
 
 *Last updated: January 13, 2026 at 12:54 AM UTC*  
-*Last checked: January 13, 2026 at 12:54 AM UTC*
+*Last checked: January 15, 2026 at 12:56 AM UTC*
