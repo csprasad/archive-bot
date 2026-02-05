@@ -37,5 +37,5 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 | 1 | https://github.com/fossasia/open-event-attendee-ios | Archived |
 | 2 | https://github.com/fossasia/open-event-organizer-ios | Archived |
 
-*Last updated: February 3, 2026 at 1:10 AM UTC*  
-*Last checked: February 3, 2026 at 1:10 AM UTC*
+*Last updated: February 5, 2026 at 1:07 AM UTC*  
+*Last checked: February 5, 2026 at 1:07 AM UTC*
