@@ -32,9 +32,7 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 ## Repository Archive Status
 
-| # | Repository URL | Status |
-|---|----------------|--------|
-| 1 | https://github.com/fossasia/open-event-organizer-ios | Archived |
+> No archives found in this project.
 
 *Last updated: February 8, 2026 at 1:27 AM UTC*  
-*Last checked: February 8, 2026 at 1:27 AM UTC*
+*Last checked: February 10, 2026 at 1:21 AM UTC*
