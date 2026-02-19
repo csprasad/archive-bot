@@ -32,7 +32,9 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 ## Repository Archive Status
 
-> No archives found in this project.
+| # | Repository URL | Status |
+|---|----------------|--------|
+| 1 | https://github.com/chris-swift-dev/Beers | Not Found |
 
-*Last updated: February 8, 2026 at 1:27 AM UTC*  
-*Last checked: February 17, 2026 at 1:10 AM UTC*
+*Last updated: February 19, 2026 at 1:11 AM UTC*  
+*Last checked: February 19, 2026 at 1:11 AM UTC*
