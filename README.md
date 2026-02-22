@@ -34,7 +34,7 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 1 | https://github.com/chris-swift-dev/Beers | Not Found |
+| 1 | https://github.com/khcrysalis/Feather | Forbidden (rate limit?) |
 
-*Last updated: February 19, 2026 at 1:11 AM UTC*  
-*Last checked: February 19, 2026 at 1:11 AM UTC*
+*Last updated: February 22, 2026 at 1:11 AM UTC*  
+*Last checked: February 22, 2026 at 1:11 AM UTC*
