@@ -32,9 +32,7 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 ## Repository Archive Status
 
-| # | Repository URL | Status |
-|---|----------------|--------|
-| 1 | https://github.com/khcrysalis/Feather | Forbidden (rate limit?) |
+> No archives found in this project.
 
 *Last updated: February 22, 2026 at 1:11 AM UTC*  
-*Last checked: February 22, 2026 at 1:11 AM UTC*
+*Last checked: February 24, 2026 at 1:09 AM UTC*
