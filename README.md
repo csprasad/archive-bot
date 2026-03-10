@@ -32,7 +32,9 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 ## Repository Archive Status
 
-> No archives found in this project.
+| # | Repository URL | Status |
+|---|----------------|--------|
+| 1 | https://github.com/HSEIreland/covid-tracker-app | Archived |
 
-*Last updated: February 22, 2026 at 1:11 AM UTC*  
-*Last checked: March 8, 2026 at 1:10 AM UTC*
+*Last updated: March 10, 2026 at 1:04 AM UTC*  
+*Last checked: March 10, 2026 at 1:04 AM UTC*
