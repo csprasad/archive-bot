@@ -32,7 +32,10 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 ## Repository Archive Status
 
-> No archives found in this project.
+| # | Repository URL | Status |
+|---|----------------|--------|
+| 1 | https://github.com/256Arts/Space-UI | Not Found |
+| 2 | https://github.com/3003h/Eros-FE | Error 451 |
 
-*Last updated: March 12, 2026 at 1:02 AM UTC*  
-*Last checked: March 29, 2026 at 1:21 AM UTC*
+*Last updated: April 5, 2026 at 1:22 AM UTC*  
+*Last checked: April 5, 2026 at 1:22 AM UTC*
