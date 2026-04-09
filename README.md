@@ -34,8 +34,7 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 1 | https://github.com/3003h/Eros-FE | Error 451 |
-| 2 | https://github.com/256Arts/Space-UI | Not Found |
+| 1 | https://github.com/wallabag/ios-app | Archived |
 
-*Last updated: April 7, 2026 at 1:20 AM UTC*  
-*Last checked: April 7, 2026 at 1:20 AM UTC*
+*Last updated: April 9, 2026 at 1:11 AM UTC*  
+*Last checked: April 9, 2026 at 1:11 AM UTC*
