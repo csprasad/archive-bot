@@ -32,9 +32,7 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 ## Repository Archive Status
 
-| # | Repository URL | Status |
-|---|----------------|--------|
-| 1 | https://github.com/wallabag/ios-app | Archived |
+> No archives found in this project.
 
 *Last updated: April 9, 2026 at 1:11 AM UTC*  
-*Last checked: April 9, 2026 at 1:11 AM UTC*
+*Last checked: April 12, 2026 at 1:26 AM UTC*
