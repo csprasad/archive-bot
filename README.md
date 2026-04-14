@@ -32,7 +32,10 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 ## Repository Archive Status
 
-> No archives found in this project.
+| # | Repository URL | Status |
+|---|----------------|--------|
+| 1 | https://github.com/87kangsw/GitTime | Archived |
+| 2 | https://github.com/Livinglist/ZCombinator | Forbidden (rate limit?) |
 
-*Last updated: April 9, 2026 at 1:11 AM UTC*  
-*Last checked: April 12, 2026 at 1:26 AM UTC*
+*Last updated: April 14, 2026 at 1:25 AM UTC*  
+*Last checked: April 14, 2026 at 1:25 AM UTC*
