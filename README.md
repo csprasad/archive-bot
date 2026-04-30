@@ -34,9 +34,8 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 1 | https://github.com/googlecast/CastVideos-ios | Archived |
-| 2 | https://github.com/migueldeicaza/SwiftTermApp | Archived |
-| 3 | https://github.com/tryswift/trySwiftAppFinal | Archived |
+| 1 | https://github.com/migueldeicaza/SwiftTermApp | Archived |
+| 2 | https://github.com/tryswift/trySwiftAppFinal | Archived |
 
-*Last updated: April 28, 2026 at 1:53 AM UTC*  
-*Last checked: April 28, 2026 at 1:53 AM UTC*
+*Last updated: April 30, 2026 at 1:55 AM UTC*  
+*Last checked: April 30, 2026 at 1:55 AM UTC*
