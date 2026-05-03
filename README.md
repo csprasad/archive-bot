@@ -32,10 +32,7 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 
 ## Repository Archive Status
 
-| # | Repository URL | Status |
-|---|----------------|--------|
-| 1 | https://github.com/migueldeicaza/SwiftTermApp | Archived |
-| 2 | https://github.com/tryswift/trySwiftAppFinal | Archived |
+> No archives found in this project.
 
 *Last updated: April 30, 2026 at 1:55 AM UTC*  
-*Last checked: April 30, 2026 at 1:55 AM UTC*
+*Last checked: May 3, 2026 at 1:49 AM UTC*
