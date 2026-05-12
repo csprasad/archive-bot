@@ -1,11 +1,40 @@
-# macOS files
-.build/
-.vscode/
-.DS_Store
+# Cache file (committed but listed for reference)
+.cache.json
 
-__pycache__/
-*.pyc
-venv/
-env/
-*.env
-archive_checker.log
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Xcode
+*.xcodeproj
+*.xcworkspace
+*.xcuserstate
+*.xcuserdatad
+DerivedData/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Build artifacts
+.build/debug/
+.build/release/
+.build/checkouts/
+.build/repositories/
+
+# Cache files (DO NOT ignore .cache.json - we want this committed)
+# .cache.json is intentionally NOT here - we need it for rate limit protection
+
+# macOS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
