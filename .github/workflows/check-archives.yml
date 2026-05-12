@@ -1,19 +1,14 @@
-name: Check Archived Repositories (DEV)
+name: Check Archived Repositories
 
 on:
-  workflow_dispatch:  # MANUAL trigger only - NO CRON
-    inputs:
-      skip_cache:
-        description: 'Skip cache (force fresh API calls)'
-        required: false
-        default: 'false'
-        type: choice
-        options:
-          - 'false'
-          - 'true'
+  schedule:
+    - cron: '0 0 * * 0,2,4'  # Sun/Tue/Thu at 00:00 UTC
+  workflow_dispatch:
 
 jobs:
-  check-archives-dev:
+  check-archives:
+    # Only run on main branch
+    if: github.ref == 'refs/heads/main'
     runs-on: macos-14
 
     permissions:
@@ -23,8 +18,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          ref: dev  # Explicitly checkout dev branch
 
       - name: Set up Swift
         uses: swift-actions/setup-swift@v2
@@ -34,18 +27,18 @@ jobs:
       - name: Build archive-bot
         run: swift build -c release
 
-      - name: Run archive-bot (DEV MODE)
-        run: .build/release/archive-bot --dev --skip-cache ${{ inputs.skip_cache }}
+      - name: Run archive-bot
+        run: .build/release/archive-bot
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit and push changes (DEV)
+      - name: Commit and push changes
         run: |
-          git config --global user.name 'GitHub Action (DEV)'
-          git config --global user.email 'action-dev@github.com'
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
           git add README.md
-          git add .cache.json  # Cache file for rate limit protection
-          git diff --cached --quiet || git commit -m 'dev: test archive status update'
-          git push origin dev
+          git add .cache.json || true
+          git diff --cached --quiet || git commit -m 'ci(bot): update archive status table'
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

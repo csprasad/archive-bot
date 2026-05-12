@@ -1,0 +1,51 @@
+name: Check Archived Repositories (DEV)
+
+on:
+  workflow_dispatch:  # Manual trigger only
+    inputs:
+      skip_cache:
+        description: 'Skip cache (force fresh API calls)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+jobs:
+  check-archives-dev:
+    runs-on: macos-14
+
+    permissions:
+      contents: write
+      actions: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+
+      - name: Set up Swift
+        uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: "5.10.1"
+
+      - name: Build archive-bot
+        run: swift build -c release
+
+      - name: Run archive-bot (DEV MODE)
+        run: .build/release/archive-bot --dev --skip-cache ${{ github.event.inputs.skip_cache }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push changes (DEV)
+        run: |
+          git config --global user.name 'GitHub Action (DEV)'
+          git config --global user.email 'action-dev@github.com'
+          git add README.md
+          git add .cache.json || true
+          git diff --cached --quiet || git commit -m 'dev: test archive status update'
+          git push origin dev
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
