@@ -2,13 +2,11 @@ name: Check Archived Repositories
 
 on:
   schedule:
-    - cron: '0 0 * * 0,2,4'  # Sun/Tue/Thu at 00:00 UTC
+    - cron: '0 0 * * 0,2,4'  # (Sun/Tue/Thu at 00:00 UTC)
   workflow_dispatch:
 
 jobs:
   check-archives:
-    # Only run on main branch
-    if: github.ref == 'refs/heads/main'
     runs-on: macos-14
 
     permissions:
@@ -37,7 +35,6 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add README.md
-          git add .cache.json || true
           git diff --cached --quiet || git commit -m 'ci(bot): update archive status table'
           git push
         env:

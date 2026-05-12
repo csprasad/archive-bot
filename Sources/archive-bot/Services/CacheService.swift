@@ -2,74 +2,139 @@
 //  CacheService.swift
 //  archive_bot
 //
-//  Persistent cache to avoid repeated API calls across runs.
+//  Simple persistent cache using UserDefaults to avoid memory crashes.
 //
 
 import Foundation
 
-struct CacheEntry: Codable {
+struct CacheEntry {
     let url: String
     let owner: String
     let repo: String
     let isArchived: Bool
     let status: String?
-    let lastCommitDate: Date?
-    let lastChecked: Date
-}
-
-struct CacheFile: Codable {
-    var entries: [String: CacheEntry]  // key = "owner/repo"
-    var lastGlobalCheck: Date?
-}
-
-enum CacheService {
-    private static let cachePath = ".cache.json"
-    private static var cache: CacheFile = CacheFile(entries: [:], lastGlobalCheck: nil)
-    private static var isDevMode = false
+    let lastCommitTimestamp: TimeInterval?  // Store as TimeInterval instead of Date
+    let lastCheckedTimestamp: TimeInterval  // Store as TimeInterval instead of Date
     
-    static func setDevMode(_ enabled: Bool) {
-        isDevMode = enabled
-        load()
+    // Computed properties for Date conversion
+    var lastCommitDate: Date? {
+        guard let timestamp = lastCommitTimestamp else { return nil }
+        return Date(timeIntervalSince1970: timestamp)
     }
     
-    static var cacheTTL: TimeInterval {
-        return isDevMode ? 1 * 60 * 60 : 7 * 24 * 60 * 60  // 1 hour dev, 7 days prod
+    var lastChecked: Date {
+        return Date(timeIntervalSince1970: lastCheckedTimestamp)
     }
     
-    static func load() {
-        guard FileManager.default.fileExists(atPath: cachePath),
-              let data = try? Data(contentsOf: URL(fileURLWithPath: cachePath)),
-              let loaded = try? JSONDecoder().decode(CacheFile.self, from: data) else {
-            cache = CacheFile(entries: [:], lastGlobalCheck: nil)
-            return
+    init(url: String, owner: String, repo: String, isArchived: Bool, status: String?, lastCommitDate: Date?, lastChecked: Date) {
+        self.url = url
+        self.owner = owner
+        self.repo = repo
+        self.isArchived = isArchived
+        self.status = status
+        self.lastCommitTimestamp = lastCommitDate?.timeIntervalSince1970
+        self.lastCheckedTimestamp = lastChecked.timeIntervalSince1970
+    }
+}
+
+// Cache manager using UserDefaults
+class CacheService {
+    static let shared = CacheService()
+    private let defaults = UserDefaults.standard
+    private let cacheKey = "archive_bot_cache"
+    private let lastGlobalCheckKey = "archive_bot_last_global_check"
+    
+    private init() {}
+    
+    var cacheTTL: TimeInterval {
+        return 7 * 24 * 60 * 60  // 7 days
+    }
+    
+    // Save all entries to UserDefaults
+    private func saveEntries(_ entries: [String: [String: Any]]) {
+        defaults.set(entries, forKey: cacheKey)
+    }
+    
+    // Load all entries from UserDefaults
+    private func loadEntries() -> [String: [String: Any]] {
+        return defaults.dictionary(forKey: cacheKey) as? [String: [String: Any]] ?? [:]
+    }
+    
+    // Save last global check timestamp
+    private func saveLastGlobalCheck(_ date: Date) {
+        defaults.set(date.timeIntervalSince1970, forKey: lastGlobalCheckKey)
+    }
+    
+    private func loadLastGlobalCheck() -> Date? {
+        let timestamp = defaults.double(forKey: lastGlobalCheckKey)
+        guard timestamp > 0 else { return nil }
+        return Date(timeIntervalSince1970: timestamp)
+    }
+    
+    func clearCache() {
+        saveEntries([:])
+        saveLastGlobalCheck(Date())
+        print("🧹 Cache cleared")
+    }
+    
+    func get(for key: String) -> CacheEntry? {
+        let entries = loadEntries()
+        guard let dict = entries[key] else { return nil }
+        
+        // Reconstruct CacheEntry from dictionary
+        guard let url = dict["url"] as? String,
+              let owner = dict["owner"] as? String,
+              let repo = dict["repo"] as? String,
+              let isArchived = dict["isArchived"] as? Bool,
+              let lastCheckedTimestamp = dict["lastCheckedTimestamp"] as? TimeInterval else {
+            return nil
         }
-        cache = loaded
+        
+        let status = dict["status"] as? String
+        let lastCommitTimestamp = dict["lastCommitTimestamp"] as? TimeInterval
+        
+        return CacheEntry(
+            url: url,
+            owner: owner,
+            repo: repo,
+            isArchived: isArchived,
+            status: status,
+            lastCommitDate: lastCommitTimestamp.map { Date(timeIntervalSince1970: $0) },
+            lastChecked: Date(timeIntervalSince1970: lastCheckedTimestamp)
+        )
     }
     
-    static func save() {
-        guard let data = try? JSONEncoder().encode(cache) else { return }
-        try? data.write(to: URL(fileURLWithPath: cachePath))
+    func set(for key: String, entry: CacheEntry) {
+        var entries = loadEntries()
+        
+        // Store as dictionary (safe for UserDefaults)
+        var dict: [String: Any] = [
+            "url": entry.url,
+            "owner": entry.owner,
+            "repo": entry.repo,
+            "isArchived": entry.isArchived,
+            "lastCheckedTimestamp": entry.lastCheckedTimestamp
+        ]
+        
+        if let status = entry.status {
+            dict["status"] = status
+        }
+        
+        if let timestamp = entry.lastCommitTimestamp {
+            dict["lastCommitTimestamp"] = timestamp
+        }
+        
+        entries[key] = dict
+        saveEntries(entries)
+        saveLastGlobalCheck(Date())
     }
     
-    static func clearCache() {
-        cache = CacheFile(entries: [:], lastGlobalCheck: nil)
-        save()
+    func isFresh(_ entry: CacheEntry) -> Bool {
+        let age = Date().timeIntervalSince(entry.lastChecked)
+        return age < cacheTTL
     }
     
-    static func get(for key: String) -> CacheEntry? {
-        return cache.entries[key]
-    }
-    
-    static func set(for key: String, entry: CacheEntry) {
-        cache.entries[key] = entry
-        cache.lastGlobalCheck = Date()
-    }
-    
-    static func isFresh(_ entry: CacheEntry) -> Bool {
-        return Date().timeIntervalSince(entry.lastChecked) < cacheTTL
-    }
-    
-    static func shouldRefetch(_ entry: CacheEntry?) -> Bool {
+    func shouldRefetch(_ entry: CacheEntry?) -> Bool {
         guard let entry = entry else { return true }
         return !isFresh(entry)
     }

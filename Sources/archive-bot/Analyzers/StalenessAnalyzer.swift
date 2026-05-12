@@ -38,7 +38,7 @@ enum StalenessAnalyzer {
         return formatter.date(from: dateString)
     }
     
-    /// Returns a human-readable staleness description
+    /// Returns a readable staleness description
     static func stalenessDescription(years: Int?) -> String {
         guard let years = years else { return "Unknown" }
         

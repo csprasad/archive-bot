@@ -6,10 +6,8 @@
 //  Returns status as: Archived, Not Found, Forbidden, or nil (active).
 //
 
-
 import Foundation
 
-// Add this line after Foundation import
 @_exported import struct Foundation.Date
 
 enum RepoStatusChecker {
@@ -70,9 +68,8 @@ enum RepoStatusChecker {
         }
         return nil
     }
-
-
-        // NEW METHOD: Check status with cache support
+   
+    //METHOD: Check status with cache support
     static func checkStatusWithCache(for url: String) async -> Models.RepoStatus {
         // Parse URL to get owner/repo for cache key
         guard let (owner, repo) = parseGitHubURL(url) else {
@@ -82,8 +79,8 @@ enum RepoStatusChecker {
         let cacheKey = "\(owner)/\(repo)"
         
         // Check cache
-        if let cached = CacheService.get(for: cacheKey), !CacheService.shouldRefetch(cached) {
-            print("📦 Cache hit: \(cacheKey) (last checked: \(cached.lastChecked))")
+        if let cached = CacheService.shared.get(for: cacheKey), !CacheService.shared.shouldRefetch(cached) {
+            // Silent cache hit - no print to avoid console spam
             return Models.RepoStatus(
                 url: url,
                 status: cached.status,
@@ -93,13 +90,11 @@ enum RepoStatusChecker {
             )
         }
         
-        print("🌐 Cache miss or expired: \(cacheKey) - fetching from API")
-        
         // Fetch from API
         let result = await checkStatusWithCommitDate(for: url)
         
-        // Cache the result if successful
-        if let lastCommitDate = result.lastCommitDate {
+        // Cache the result if the repo exists and we got a commit date
+        if result.exists, let lastCommitDate = result.lastCommitDate {
             let entry = CacheEntry(
                 url: url,
                 owner: owner,
@@ -109,13 +104,13 @@ enum RepoStatusChecker {
                 lastCommitDate: lastCommitDate,
                 lastChecked: Date()
             )
-            CacheService.set(for: cacheKey, entry: entry)
+            CacheService.shared.set(for: cacheKey, entry: entry)
         }
         
         return result
     }
-    
-    // NEW METHOD: Check status including last commit date
+        
+    //METHOD: Check status including last commit date
     static func checkStatusWithCommitDate(for url: String) async -> Models.RepoStatus {
         guard let (owner, repo) = parseGitHubURL(url) else {
             return Models.RepoStatus(url: url, status: "Invalid URL")

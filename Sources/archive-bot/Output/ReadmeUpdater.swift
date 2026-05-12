@@ -37,9 +37,13 @@ enum ReadmeUpdater {
         
         // Archived repos table
         if archivedResults.isEmpty {
+            sectionLines.append("")
+            sectionLines.append("### 🏛️ Archived Repositories")
+            sectionLines.append("")
             sectionLines.append("> No archives found in this project.")
         } else {
-            sectionLines.append("### Archived Repositories")
+            sectionLines.append("")
+            sectionLines.append("### 🏛️ Archived Repositories")
             sectionLines.append("")
             sectionLines.append("| # | Repository URL | Status |")
             sectionLines.append("|---|----------------|--------|")
@@ -61,12 +65,17 @@ enum ReadmeUpdater {
                 let years = result.yearsSinceLastCommit.map { "\($0) years" } ?? "Unknown"
                 sectionLines.append("| \(index + 1) | \(result.url) | \(dateString) | \(years) |")
             }
+        } else {
+            sectionLines.append("")
+            sectionLines.append("### ⚠️ Stale Repositories (8+ years without commit)")
+            sectionLines.append("")
+            sectionLines.append("> No stale repositories found. All active projects have recent commits within the last 8 years.")
         }
         
         // Not found repos (optional - keeping your existing behavior)
         if !notFoundResults.isEmpty && archivedResults.isEmpty && staleResults.isEmpty {
             sectionLines.append("")
-            sectionLines.append("### Unavailable Repositories")
+            sectionLines.append("### ‼️ Unavailable Repositories")
             sectionLines.append("")
             sectionLines.append("| # | Repository URL | Status |")
             sectionLines.append("|---|----------------|--------|")
