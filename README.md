@@ -41,8 +41,8 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 
 5. **Generates Markdown Tables**  
    Results are organized into two sections:
-   - **🏛️ Archived  *&* ‼️ Inaccessible repos** (if any)
-   - **⚠️ Stale Repositories** (8+ years without commits)
+   - **Archived */* Inaccessible repos** (if any)
+   - **Stale Repositories** (8+ years without commits)
 
 6. **Updates Timestamps**  
    - A **Last Checked** timestamp (when the scan ran)
