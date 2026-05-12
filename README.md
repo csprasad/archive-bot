@@ -1,11 +1,25 @@
 # archive-bot
 
-> A GitHub Action that checks for archived or inaccessible repositories in [dkhamsing/open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps).
+> A GitHub Action that checks for **archived**, **inaccessible**, and **stale** (8+ years without commits) repositories in [dkhamsing/open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps).
 
 ## Overview
 
-This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps) list accurate by identifying GitHub repositories that have been archived or are no longer available. It scans the list’s `content.json`, skips entries already tagged "archive", and checks the rest via the GitHub API. The results are written to this repo’s `README.md` for easy review.
+This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps) list accurate by:
+- Identifying GitHub repositories that have been **archived** or are **no longer available**
+- Detecting **stale repositories** that haven't had commits in 8+ years
 
+It scans the list's `content.json`, intelligently caches results to avoid rate limits, and writes findings to this repo's `README.md` for easy review.
+
+## Features
+
+| Feature | Description |
+|---------|-------------|
+| 🗄️ **Archive Detection** | Finds repositories that have been archived by owners |
+| 🔍 **Inaccessible Repos** | Identifies 404 (Not Found) and 403 (Forbidden) repos |
+| ⏰ **Staleness Detection** | Flags repos with no commits in 8+ years |
+| 💾 **Smart Caching** | 7-day cache to avoid GitHub API rate limits |
+| 📊 **Markdown Reports** | Clean, readable tables with timestamps |
+| 🔄 **Automated** | Runs on cron schedule (Sun/Tue/Thu) |
 
 ## How It Works
 
@@ -15,24 +29,47 @@ This bot helps keep the [open-source-ios-apps](https://github.com/dkhamsing/open
 2. **Filters Out Archived Entries**  
    Projects already tagged with `"archive"` in the JSON are excluded from further processing. This avoids unnecessary checks.
 
-3. **Validates Repository Status**  
-   For each remaining project, the bot uses the GitHub API to verify whether the repository:
-   - Still exists
-   - Has been archived
-   - Returns a `404` (Not Found)
-   - Returns a `403` (Forbidden — possibly due to rate limiting)
+3. **Checks Cache First**  
+   Before calling the GitHub API, the bot checks its local cache (`.cache.json`). Repositories checked in the last 7 days are reused, saving API quota.
 
-4. **Generates a Markdown Table**  
-   Repositories identified as archived or inaccessible are listed in a table under the `Repository Archive Status` section in this `README.md` file.
+4. **Validates Repository Status & Activity**  
+   For each remaining project, the bot uses the GitHub API to verify:
+   - **Existence**: Still exists or returns 404/403
+   - **Archive status**: Has the repo been archived?
+   - **Last commit date**: When was the last push? (`pushed_at` field)
+   - **Staleness**: Calculates years since last commit
 
-5. **Updates Timestamps**  
+5. **Generates Markdown Tables**  
+   Results are organized into two sections:
+   - **Archived */* Inaccessible repos** (if any)
+   - **Stale Repositories** (8+ years without commits)
+
+6. **Updates Timestamps**  
    - A **Last Checked** timestamp (when the scan ran)
-   - A **Last Updated** timestamp (if the table was modified)
-
+   - A **Last Updated** timestamp (if any table was modified)
 
 ## Repository Archive Status
 
+
+### 🏛️ Archived Repositories
+
 > No archives found in this project.
 
-*Last updated: April 30, 2026 at 1:55 AM UTC*  
-*Last checked: May 12, 2026 at 1:58 AM UTC*
+### ⚠️ Stale Repositories (8+ years without commit)
+
+| # | Repository URL | Last Commit Date | Years Inactive |
+|---|----------------|------------------|----------------|
+| 1 | https://github.com/4np/UitzendingGemist | 2018-02-08 | 8 years |
+| 2 | https://github.com/ResearchKit/MyHeartCounts | 2015-10-28 | 10 years |
+| 3 | https://github.com/chrisballinger/BLEMeshChat | 2017-05-25 | 8 years |
+| 4 | https://github.com/dkhamsing/how-much | 2017-04-28 | 9 years |
+| 5 | https://github.com/ericjohnson/canabalt-ios | 2011-08-20 | 14 years |
+| 6 | https://github.com/id-Software/DOOM-IOS2 | 2016-07-06 | 9 years |
+| 7 | https://github.com/raaxis/nds4ios | 2017-03-12 | 9 years |
+| 8 | https://github.com/rnystrom/HackerNewsReader | 2018-01-18 | 8 years |
+| 9 | https://github.com/dkhamsing/TabDump | 2017-07-14 | 8 years |
+| 10 | https://github.com/sephine/lumio | 2016-06-07 | 9 years |
+| 11 | https://github.com/thiagolioy/marvelapp | 2017-07-24 | 8 years |
+
+*Last updated: May 12, 2026 at 4:54 PM UTC*  
+*Last checked: May 12, 2026 at 4:54 PM UTC*
