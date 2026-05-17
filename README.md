@@ -53,7 +53,9 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 
 ### 🏛️ Archived Repositories
 
-> No archives found in this project.
+| # | Repository URL | Status |
+|---|----------------|--------|
+| 1 | https://github.com/triangledraw/TriangleDraw-iOS | Archived |
 
 ### ⚠️ Stale Repositories (8+ years without commit)
 
@@ -63,13 +65,12 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 | 2 | https://github.com/ResearchKit/MyHeartCounts | 2015-10-27 | 10 years |
 | 3 | https://github.com/chrisballinger/BLEMeshChat | 2017-05-25 | 8 years |
 | 4 | https://github.com/dkhamsing/how-much | 2017-04-27 | 9 years |
-| 5 | https://github.com/dkhamsing/TabDump | 2017-07-14 | 8 years |
-| 6 | https://github.com/ericjohnson/canabalt-ios | 2011-08-20 | 14 years |
-| 7 | https://github.com/id-Software/DOOM-IOS2 | 2016-07-06 | 9 years |
-| 8 | https://github.com/raaxis/nds4ios | 2017-03-11 | 9 years |
-| 9 | https://github.com/rnystrom/HackerNewsReader | 2018-01-18 | 8 years |
-| 10 | https://github.com/sephine/lumio | 2016-06-07 | 9 years |
-| 11 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
+| 5 | https://github.com/ericjohnson/canabalt-ios | 2011-08-20 | 14 years |
+| 6 | https://github.com/id-Software/DOOM-IOS2 | 2016-07-06 | 9 years |
+| 7 | https://github.com/raaxis/nds4ios | 2017-03-11 | 9 years |
+| 8 | https://github.com/rnystrom/HackerNewsReader | 2018-01-18 | 8 years |
+| 9 | https://github.com/sephine/lumio | 2016-06-07 | 9 years |
+| 10 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
 
-*Last updated: May 14, 2026 at 2:06 AM UTC*  
-*Last checked: May 14, 2026 at 2:06 AM UTC*
+*Last updated: May 17, 2026 at 1:59 AM UTC*  
+*Last checked: May 17, 2026 at 1:59 AM UTC*
