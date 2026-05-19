@@ -72,5 +72,5 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 | 9 | https://github.com/sephine/lumio | 2016-06-07 | 9 years |
 | 10 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
 
-*Last updated: May 17, 2026 at 1:59 AM UTC*  
-*Last checked: May 17, 2026 at 1:59 AM UTC*
+*Last updated: May 19, 2026 at 2:09 AM UTC*  
+*Last checked: May 19, 2026 at 2:09 AM UTC*
