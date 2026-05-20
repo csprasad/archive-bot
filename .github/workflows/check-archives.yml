@@ -32,10 +32,11 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.name 'ArchiveBot'
-          git config --global user.email 'action@github.com'
+          git config --global user.name 'archive-bot'
+          git config --global user.email 'archive-bot@users.noreply.github.com'
           git add README.md
-          git diff --cached --quiet || git commit -m '[auto][ci bot]: update archived repositories status'
+          git add .cache.json || true
+          git diff --cached --quiet || git commit -m '[auto][ci]: update archived repositories status'
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
