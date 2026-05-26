@@ -57,14 +57,13 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 |---|----------------|--------|
 | 1 | https://github.com/antranapp/IndieApps | Archived |
 | 2 | https://github.com/fossasia/susi_iOS | Archived |
-| 3 | https://github.com/triangledraw/TriangleDraw-iOS | Archived |
 
 ### ⚠️ Stale Repositories (8+ years without commit)
 
 | # | Repository URL | Last Commit Date | Years Inactive |
 |---|----------------|------------------|----------------|
 | 1 | https://github.com/4np/UitzendingGemist | 2018-02-08 | 8 years |
-| 2 | https://github.com/chrisballinger/BLEMeshChat | 2017-05-25 | 8 years |
+| 2 | https://github.com/chrisballinger/BLEMeshChat | 2017-05-25 | 9 years |
 | 3 | https://github.com/dkhamsing/how-much | 2017-04-27 | 9 years |
 | 4 | https://github.com/ericjohnson/canabalt-ios | 2011-08-20 | 14 years |
 | 5 | https://github.com/id-Software/DOOM-IOS2 | 2016-07-06 | 9 years |
@@ -73,5 +72,5 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 | 8 | https://github.com/sephine/lumio | 2016-06-07 | 9 years |
 | 9 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
 
-*Last updated: May 24, 2026 at 2:07 AM UTC*  
-*Last checked: May 24, 2026 at 2:07 AM UTC*
+*Last updated: May 26, 2026 at 2:05 AM UTC*  
+*Last checked: May 26, 2026 at 2:05 AM UTC*
