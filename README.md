@@ -53,10 +53,7 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 
 ### 🏛️ Archived Repositories
 
-| # | Repository URL | Status |
-|---|----------------|--------|
-| 1 | https://github.com/antranapp/IndieApps | Archived |
-| 2 | https://github.com/fossasia/susi_iOS | Archived |
+> No archives found in this project.
 
 ### ⚠️ Stale Repositories (8+ years without commit)
 
@@ -72,5 +69,5 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 | 8 | https://github.com/sephine/lumio | 2016-06-07 | 9 years |
 | 9 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
 
-*Last updated: May 26, 2026 at 2:05 AM UTC*  
-*Last checked: May 26, 2026 at 2:05 AM UTC*
+*Last updated: May 28, 2026 at 1:57 AM UTC*  
+*Last checked: May 28, 2026 at 1:57 AM UTC*
