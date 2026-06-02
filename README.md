@@ -65,8 +65,7 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 | 4 | https://github.com/id-Software/DOOM-IOS2 | 2016-07-06 | 9 years |
 | 5 | https://github.com/raaxis/nds4ios | 2017-03-11 | 9 years |
 | 6 | https://github.com/rnystrom/HackerNewsReader | 2018-01-18 | 8 years |
-| 7 | https://github.com/sephine/lumio | 2016-06-07 | 9 years |
-| 8 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
+| 7 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
 
-*Last updated: May 31, 2026 at 2:15 AM UTC*  
-*Last checked: May 31, 2026 at 2:15 AM UTC*
+*Last updated: June 2, 2026 at 2:35 AM UTC*  
+*Last checked: June 2, 2026 at 2:35 AM UTC*
