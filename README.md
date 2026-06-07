@@ -67,5 +67,5 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 | 6 | https://github.com/rnystrom/HackerNewsReader | 2018-01-18 | 8 years |
 | 7 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
 
-*Last updated: June 4, 2026 at 2:37 AM UTC*  
-*Last checked: June 4, 2026 at 2:37 AM UTC*
+*Last updated: June 7, 2026 at 2:31 AM UTC*  
+*Last checked: June 7, 2026 at 2:31 AM UTC*
