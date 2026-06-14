@@ -61,10 +61,8 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 |---|----------------|------------------|----------------|
 | 1 | https://github.com/4np/UitzendingGemist | 2018-02-08 | 8 years |
 | 2 | https://github.com/chrisballinger/BLEMeshChat | 2017-05-25 | 9 years |
-| 3 | https://github.com/dkhamsing/how-much | 2017-04-27 | 9 years |
-| 4 | https://github.com/raaxis/nds4ios | 2017-03-11 | 9 years |
-| 5 | https://github.com/rnystrom/HackerNewsReader | 2018-01-18 | 8 years |
-| 6 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
+| 3 | https://github.com/raaxis/nds4ios | 2017-03-11 | 9 years |
+| 4 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
 
-*Last updated: June 11, 2026 at 2:35 AM UTC*  
-*Last checked: June 11, 2026 at 2:35 AM UTC*
+*Last updated: June 14, 2026 at 2:35 AM UTC*  
+*Last checked: June 14, 2026 at 2:35 AM UTC*
