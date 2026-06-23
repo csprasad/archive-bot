@@ -63,5 +63,5 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 | 2 | https://github.com/raaxis/nds4ios | 2017-03-11 | 9 years |
 | 3 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
 
-*Last updated: June 21, 2026 at 2:38 AM UTC*  
-*Last checked: June 21, 2026 at 2:38 AM UTC*
+*Last updated: June 23, 2026 at 2:07 AM UTC*  
+*Last checked: June 23, 2026 at 2:07 AM UTC*
