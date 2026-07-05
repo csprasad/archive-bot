@@ -53,9 +53,7 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 
 ### 🏛️ Archived Repositories
 
-| # | Repository URL | Status |
-|---|----------------|--------|
-| 1 | https://github.com/hbmartin/Directory-SwiftUI | Archived |
+> No archives found in this project.
 
 ### ⚠️ Stale Repositories (8+ years without commit)
 
@@ -65,5 +63,5 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 | 2 | https://github.com/raaxis/nds4ios | 2017-03-11 | 9 years |
 | 3 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
 
-*Last updated: July 2, 2026 at 2:08 AM UTC*  
-*Last checked: July 2, 2026 at 2:08 AM UTC*
+*Last updated: July 5, 2026 at 1:58 AM UTC*  
+*Last checked: July 5, 2026 at 1:58 AM UTC*
