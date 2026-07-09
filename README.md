@@ -59,9 +59,8 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 
 | # | Repository URL | Last Commit Date | Years Inactive |
 |---|----------------|------------------|----------------|
-| 1 | https://github.com/chrisballinger/BLEMeshChat | 2017-05-25 | 9 years |
-| 2 | https://github.com/raaxis/nds4ios | 2017-03-11 | 9 years |
-| 3 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
+| 1 | https://github.com/raaxis/nds4ios | 2017-03-11 | 9 years |
+| 2 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
 
-*Last updated: July 7, 2026 at 2:00 AM UTC*  
-*Last checked: July 7, 2026 at 2:00 AM UTC*
+*Last updated: July 9, 2026 at 1:52 AM UTC*  
+*Last checked: July 9, 2026 at 1:52 AM UTC*
