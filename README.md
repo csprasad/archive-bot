@@ -57,9 +57,7 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 
 ### ⚠️ Stale Repositories (8+ years without commit)
 
-| # | Repository URL | Last Commit Date | Years Inactive |
-|---|----------------|------------------|----------------|
-| 1 | https://github.com/thiagolioy/marvelapp | 2017-07-23 | 8 years |
+> No stale repositories found. All active projects have recent commits within the last 8 years.
 
 *Last updated: July 12, 2026 at 1:42 AM UTC*  
-*Last checked: July 12, 2026 at 1:42 AM UTC*
+*Last checked: July 14, 2026 at 1:22 AM UTC*
