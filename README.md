@@ -59,5 +59,11 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 
 > No stale repositories found. All active projects have recent commits within the last 8 years.
 
+### ‼️ Unavailable Repositories
+
+| # | Repository URL | Status |
+|---|----------------|--------|
+| 1 | https://github.com/Sage-Bionetworks/CardiorespiratoryFitness-iOS | Not Found |
+
 *Last updated: July 12, 2026 at 1:42 AM UTC*  
-*Last checked: July 19, 2026 at 1:29 AM UTC*
+*Last checked: July 21, 2026 at 1:28 AM UTC*
