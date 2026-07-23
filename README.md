@@ -66,4 +66,4 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 | 1 | https://github.com/Sage-Bionetworks/CardiorespiratoryFitness-iOS | Not Found |
 
 *Last updated: July 12, 2026 at 1:42 AM UTC*  
-*Last checked: July 21, 2026 at 1:28 AM UTC*
+*Last checked: July 23, 2026 at 1:47 AM UTC*
