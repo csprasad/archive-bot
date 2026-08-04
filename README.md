@@ -53,11 +53,13 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 
 ### 🏛️ Archived Repositories
 
-> No archives found in this project.
+| # | Repository URL | Status |
+|---|----------------|--------|
+| 1 | https://github.com/jonluca/PasteBinApp | Archived |
 
 ### ⚠️ Stale Repositories (8+ years without commit)
 
 > No stale repositories found. All active projects have recent commits within the last 8 years.
 
-*Last updated: July 12, 2026 at 1:42 AM UTC*  
-*Last checked: August 2, 2026 at 1:44 AM UTC*
+*Last updated: August 4, 2026 at 1:23 AM UTC*  
+*Last checked: August 4, 2026 at 1:23 AM UTC*
