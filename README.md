@@ -55,11 +55,12 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 1 | https://github.com/jonluca/PasteBinApp | Archived |
+| 1 | https://github.com/DerLobi/Depressed | Archived |
+| 2 | https://github.com/jonluca/PasteBinApp | Archived |
 
 ### ⚠️ Stale Repositories (8+ years without commit)
 
 > No stale repositories found. All active projects have recent commits within the last 8 years.
 
-*Last updated: August 4, 2026 at 1:23 AM UTC*  
-*Last checked: August 4, 2026 at 1:23 AM UTC*
+*Last updated: August 6, 2026 at 1:25 AM UTC*  
+*Last checked: August 6, 2026 at 1:25 AM UTC*
