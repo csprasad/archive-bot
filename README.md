@@ -62,5 +62,5 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 
 > No stale repositories found. All active projects have recent commits within the last 8 years.
 
-*Last updated: August 23, 2026 at 12:39 AM UTC*  
-*Last checked: August 23, 2026 at 12:39 AM UTC*
+*Last updated: August 25, 2026 at 12:37 AM UTC*  
+*Last checked: August 25, 2026 at 12:37 AM UTC*
