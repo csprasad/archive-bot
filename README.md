@@ -55,12 +55,11 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 
 | # | Repository URL | Status |
 |---|----------------|--------|
-| 1 | https://github.com/DerLobi/Depressed | Archived |
-| 2 | https://github.com/brittanyarima/Steps | Archived |
+| 1 | https://github.com/brittanyarima/Steps | Archived |
 
 ### ⚠️ Stale Repositories (8+ years without commit)
 
 > No stale repositories found. All active projects have recent commits within the last 8 years.
 
-*Last updated: September 6, 2026 at 1:47 AM UTC*  
-*Last checked: September 6, 2026 at 1:47 AM UTC*
+*Last updated: September 8, 2026 at 1:55 AM UTC*  
+*Last checked: September 8, 2026 at 1:55 AM UTC*
