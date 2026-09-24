@@ -59,5 +59,11 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 
 > No stale repositories found. All active projects have recent commits within the last 8 years.
 
+### ‼️ Unavailable Repositories
+
+| # | Repository URL | Status |
+|---|----------------|--------|
+| 1 | https://github.com/wvabrinskas/PokePal | Not Found |
+
 *Last updated: September 10, 2026 at 1:58 AM UTC*  
-*Last checked: September 22, 2026 at 2:18 AM UTC*
+*Last checked: September 24, 2026 at 2:05 AM UTC*
