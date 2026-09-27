@@ -53,17 +53,14 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 
 ### 🏛️ Archived Repositories
 
-> No archives found in this project.
+| # | Repository URL | Status |
+|---|----------------|--------|
+| 1 | https://github.com/marty-suzuki/iOSDesignPatternSamples | Archived |
+| 2 | https://github.com/sgr-ksmt/FireTodo | Archived |
 
 ### ⚠️ Stale Repositories (8+ years without commit)
 
 > No stale repositories found. All active projects have recent commits within the last 8 years.
 
-### ‼️ Unavailable Repositories
-
-| # | Repository URL | Status |
-|---|----------------|--------|
-| 1 | https://github.com/wvabrinskas/PokePal | Not Found |
-
-*Last updated: September 10, 2026 at 1:58 AM UTC*  
-*Last checked: September 24, 2026 at 2:05 AM UTC*
+*Last updated: September 27, 2026 at 2:22 AM UTC*  
+*Last checked: September 27, 2026 at 2:22 AM UTC*
