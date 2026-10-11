@@ -56,11 +56,10 @@ It scans the list's `content.json`, intelligently caches results to avoid rate l
 | # | Repository URL | Status |
 |---|----------------|--------|
 | 1 | https://github.com/marty-suzuki/iOSDesignPatternSamples | Archived |
-| 2 | https://github.com/sgr-ksmt/FireTodo | Archived |
 
 ### ⚠️ Stale Repositories (8+ years without commit)
 
 > No stale repositories found. All active projects have recent commits within the last 8 years.
 
-*Last updated: October 8, 2026 at 3:27 AM UTC*  
-*Last checked: October 8, 2026 at 3:27 AM UTC*
+*Last updated: October 11, 2026 at 2:45 AM UTC*  
+*Last checked: October 11, 2026 at 2:45 AM UTC*
