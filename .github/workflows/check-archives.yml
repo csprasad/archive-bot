@@ -39,6 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and push README changes
+        shell: bash
         run: |
           git config user.name 'archive-bot'
           git config user.email 'archive-bot@users.noreply.github.com'
@@ -50,6 +51,8 @@ jobs:
           fi
 
           git commit -m '[auto][ci]: update archived repositories status'
-          git push
+
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
