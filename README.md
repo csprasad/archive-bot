@@ -6,31 +6,33 @@ Archive Bot periodically checks the repositories listed in the directory and pub
 
 ## Repository Status Report
 
-This report highlights repositories that may need attention.
+This report highlights repositories that may need attention. The stale check uses GitHub's `pushed_at` timestamp (last push), which is not necessarily the date of the latest commit.
+
+<!-- ARCHIVE-BOT:REPORT:START -->
 
 ### 🏛️ Archived Repositories
 
-These repositories have been marked as archived by their owners on GitHub.
-
 | # | Repository | Status |
 |---:|---|---|
-| 1 | https://github.com/marty-suzuki/iOSDesignPatternSamples | Archived |
+| 1 | https://github.com/cranci1/Sora | Archived |
+| 2 | https://github.com/shagedorn/StateRestorationDemo | Archived |
 
-### ⚠️ Stale Repositories (8+ years without commit)
-
-These repositories have had no recorded repository activity for at least eight years, according to the bot's activity check.
+### ⚠️ Stale Repositories (8+ years without recorded push)
 
 > No stale repositories found.
+
+**Last updated:** November 4, 2026 at 6:16 AM UTC
+**Last checked:** November 4, 2026 at 7:02 AM UTC
+<!-- ARCHIVE-BOT:REPORT:END -->
 
 ## Understanding the Results
 
 - **Archived:** The repository owner has marked the repository as archived on GitHub.
-- **Inaccessible:** The repository could not be accessed during the check. This can happen when a repository is unavailable or access is restricted.
-- **Stale:** The repository has not recorded a commit within the last eight years.
+- **Unavailable (HTTP 404):** GitHub returned 404. This may mean the repository was removed, but GitHub can also return 404 for private repositories or resources the token cannot access.
+- **Check requiring review:** The API check was inconclusive, for example because of rate limiting, access restrictions, or a network error. These results are not classified as deleted or inactive.
+- **Stale:** The repository has not recorded a push within the last eight years. A push timestamp is a proxy for repository activity, not an exact last-commit timestamp.
 
-These findings are indicators for further review, not definitive judgments about a project's usefulness or future.
-
-An inaccessible repository is not necessarily deleted or abandoned. GitHub access restrictions, permissions, or API rate limits can affect the results. Likewise, an inactive repository may still be functional and useful.
+These findings are indicators for further review, not definitive judgments about a project's usefulness or future. Likewise, an inactive repository may still be functional and useful.
 
 ## About This Project
 
@@ -39,8 +41,5 @@ Archive Bot helps maintain the [Open Source iOS Apps](https://github.com/dkhamsi
 The report is generated automatically and published in this README so that directory maintainers and readers can review the findings in one place.
 
 ---
-
-**Last updated:** October 11, 2026 at 2:45 AM UTC
-**Last checked:** October 11, 2026 at 2:45 AM UTC
 
 [Source directory](https://github.com/dkhamsing/open-source-ios-apps) · [Archive Bot source code](https://github.com/csprasad/archive-bot) · [MIT License](LICENSE)

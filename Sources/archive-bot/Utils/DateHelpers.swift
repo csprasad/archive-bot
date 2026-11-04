@@ -1,35 +1,34 @@
 //
-//  DateHelpers.swift
-//  archive_bot
-//
-//  Helper functions for date manipulation.
+// DateHelpers.swift
+// Deterministic date calculations and UTC report formatting.
 //
 
 import Foundation
 
 enum DateHelpers {
-    
-    /// Calculate years between two dates
-    static func yearsBetween(_ from: Date, to: Date) -> Int {
-        let calendar = Calendar.current
-        return calendar.dateComponents([.year], from: from, to: to).year ?? 0
+    private static var utcCalendar: Calendar {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        return calendar
     }
-    
-    /// Format date for display in README
+
+    static func yearsBetween(_ from: Date, to: Date) -> Int {
+        utcCalendar.dateComponents([.year], from: from, to: to).year ?? 0
+    }
+
     static func formatForDisplay(_ date: Date) -> String {
         let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
         formatter.dateFormat = "yyyy-MM-dd"
         return formatter.string(from: date)
     }
-    
-    /// Check if a date is older than given years
-    static func isOlderThan(years: Int, date: Date) -> Bool {
-        return yearsBetween(date, to: Date()) >= years
+
+    static func isOlderThan(years: Int, date: Date, now: Date = Date()) -> Bool {
+        yearsBetween(date, to: now) >= years
     }
-    
-    /// Get current date as ISO string for API conditional requests
+
     static func isoString(from date: Date = Date()) -> String {
-        let formatter = ISO8601DateFormatter()
-        return formatter.string(from: date)
+        ISO8601DateFormatter().string(from: date)
     }
 }
