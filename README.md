@@ -14,15 +14,15 @@ This report highlights repositories that may need attention. The stale check use
 
 | # | Repository | Status |
 |---:|---|---|
-| 1 | https://github.com/marty-suzuki/iOSDesignPatternSamples | Archived |
+| 1 | https://github.com/cranci1/Sora | Archived |
+| 2 | https://github.com/shagedorn/StateRestorationDemo | Archived |
 
 ### ⚠️ Stale Repositories (8+ years without recorded push)
 
 > No stale repositories found.
 
-**Last updated:** October 11, 2026 at 2:45 AM UTC
-**Last checked:** October 11, 2026 at 2:45 AM UTC
-
+**Last updated:** November 4, 2026 at 6:16 AM UTC
+**Last checked:** November 4, 2026 at 6:16 AM UTC
 <!-- ARCHIVE-BOT:REPORT:END -->
 
 ## Understanding the Results
