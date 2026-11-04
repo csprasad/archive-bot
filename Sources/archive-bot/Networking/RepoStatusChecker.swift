@@ -1,162 +1,126 @@
 //
-//  RepoStatusChecker.swift
-//  archive_bot
-//
-//  Calls GitHub API to determine if a given repository is archived.
-//  Returns status as: Archived, Not Found, Forbidden, or nil (active).
+// RepoStatusChecker.swift
+// Checks GitHub repository metadata and uses the persistent cache when fresh.
 //
 
 import Foundation
-
-@_exported import struct Foundation.Date
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 enum RepoStatusChecker {
     static let apiBase = "https://api.github.com/repos"
-    static let token = ProcessInfo.processInfo.environment["GITHUB_TOKEN"]
-    static let headers: [String: String] = {
-        var dict = ["Accept": "application/vnd.github.v3+json"]
-        if let token { dict["Authorization"] = "token \(token)" }
-        return dict
-    }()
-
-    static func checkStatus(for url: String) async -> Models.RepoStatus {
-        guard let (owner, repo) = parseGitHubURL(url) else {
-            return Models.RepoStatus(url: url, status: "Invalid URL")
-        }
-
-        let apiURLString = "\(apiBase)/\(owner)/\(repo)"
-        guard let apiURL = URL(string: apiURLString) else {
-            return Models.RepoStatus(url: url, status: "Malformed API URL")
-        }
-
-        var request = URLRequest(url: apiURL)
-        headers.forEach { key, value in request.setValue(value, forHTTPHeaderField: key) }
-
-        do {
-            let (data, response) = try await URLSession.shared.data(for: request)
-            guard let httpResponse = response as? HTTPURLResponse else {
-                return Models.RepoStatus(url: url, status: "Invalid response")
-            }
-
-            switch httpResponse.statusCode {
-            case 200:
-                if let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-                   let isArchived = json["archived"] as? Bool {
-                    return Models.RepoStatus(url: url, status: isArchived ? "Archived" : nil)
-                }
-                return Models.RepoStatus(url: url, status: "Parse Error")
-
-            case 404:
-                return Models.RepoStatus(url: url, status: "Not Found")
-            case 403:
-                return Models.RepoStatus(url: url, status: "Forbidden (rate limit?)")
-            default:
-                return Models.RepoStatus(url: url, status: "Error \(httpResponse.statusCode)")
-            }
-        } catch {
-            return Models.RepoStatus(url: url, status: "Exception: \(error.localizedDescription)")
-        }
+    private static let token = ProcessInfo.processInfo.environment["GITHUB_TOKEN"]
+    static var isTokenConfigured: Bool {
+        guard let token, !token.isEmpty else { return false }
+        return true
     }
 
-    private static func parseGitHubURL(_ url: String) -> (String, String)? {
-        let regex = try! NSRegularExpression(pattern: #"https:\/\/github\.com\/([^\/]+)\/([^\/]+)"#)
-        let range = NSRange(url.startIndex..., in: url)
-        if let match = regex.firstMatch(in: url, range: range),
-           let ownerRange = Range(match.range(at: 1), in: url),
-           let repoRange = Range(match.range(at: 2), in: url) {
-            return (String(url[ownerRange]), String(url[repoRange]))
+    private static var headers: [String: String] {
+        var values = [
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+            "User-Agent": "archive-bot"
+        ]
+        if let token, !token.isEmpty {
+            values["Authorization"] = "Bearer \(token)"
         }
-        return nil
+        return values
     }
-   
-    //METHOD: Check status with cache support
+
     static func checkStatusWithCache(for url: String) async -> Models.RepoStatus {
-        // Parse URL to get owner/repo for cache key
-        guard let (owner, repo) = parseGitHubURL(url) else {
-            return Models.RepoStatus(url: url, status: "Invalid URL")
+        guard let repository = GitHubRepositoryURL(url) else {
+            return Models.RepoStatus(url: url, status: "Invalid GitHub repository URL", exists: false)
         }
-        
-        let cacheKey = "\(owner)/\(repo)"
-        
-        // Check cache
-        if let cached = CacheService.shared.get(for: cacheKey), !CacheService.shared.shouldRefetch(cached) {
-            // Silent cache hit - no print to avoid console spam
+
+        let cacheKey = repository.apiPath.lowercased()
+        if let cached = await CacheService.shared.getFresh(for: cacheKey) {
             return Models.RepoStatus(
-                url: url,
+                url: repository.canonicalURL,
                 status: cached.status,
                 lastCommitDate: cached.lastCommitDate,
                 isArchived: cached.isArchived,
                 exists: true
             )
         }
-        
-        // Fetch from API
-        let result = await checkStatusWithCommitDate(for: url)
-        
-        // Cache the result if the repo exists and we got a commit date
+
+        let result = await fetchStatus(for: repository)
         if result.exists, let lastCommitDate = result.lastCommitDate {
             let entry = CacheEntry(
-                url: url,
-                owner: owner,
-                repo: repo,
+                url: repository.canonicalURL,
+                owner: repository.owner,
+                repo: repository.name,
                 isArchived: result.isArchived,
                 status: result.status,
                 lastCommitDate: lastCommitDate,
                 lastChecked: Date()
             )
-            CacheService.shared.set(for: cacheKey, entry: entry)
+            do {
+                try await CacheService.shared.set(for: cacheKey, entry: entry)
+            } catch {
+                fputs("Warning: unable to persist cache: \(error.localizedDescription)\n", stderr)
+            }
         }
-        
         return result
     }
-        
-    //METHOD: Check status including last commit date
-    static func checkStatusWithCommitDate(for url: String) async -> Models.RepoStatus {
-        guard let (owner, repo) = parseGitHubURL(url) else {
-            return Models.RepoStatus(url: url, status: "Invalid URL")
-        }
 
-        let apiURLString = "\(apiBase)/\(owner)/\(repo)"
-        guard let apiURL = URL(string: apiURLString) else {
-            return Models.RepoStatus(url: url, status: "Malformed API URL")
+    private static func fetchStatus(for repository: GitHubRepositoryURL) async -> Models.RepoStatus {
+        guard let apiURL = URL(string: "\(apiBase)/\(repository.owner)/\(repository.name)") else {
+            return Models.RepoStatus(url: repository.canonicalURL, status: "Invalid API URL", exists: false)
         }
 
         var request = URLRequest(url: apiURL)
-        headers.forEach { key, value in request.setValue(value, forHTTPHeaderField: key) }
+        request.timeoutInterval = 20
+        headers.forEach { request.setValue($1, forHTTPHeaderField: $0) }
 
         do {
             let (data, response) = try await URLSession.shared.data(for: request)
             guard let httpResponse = response as? HTTPURLResponse else {
-                return Models.RepoStatus(url: url, status: "Invalid response")
+                return inconclusive(repository, "non-HTTP response")
             }
 
             switch httpResponse.statusCode {
             case 200:
-                if let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any] {
-                    let isArchived = json["archived"] as? Bool ?? false
-                    let lastCommitDate = StalenessAnalyzer.extractLastCommitDate(from: json)
-                    
-                    let status: String? = isArchived ? "Archived" : nil
-                    
-                    return Models.RepoStatus(
-                        url: url,
-                        status: status,
-                        lastCommitDate: lastCommitDate,
-                        isArchived: isArchived,
-                        exists: true
-                    )
+                guard let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+                      let isArchived = json["archived"] as? Bool else {
+                    return inconclusive(repository, "invalid GitHub API response")
                 }
-                return Models.RepoStatus(url: url, status: "Parse Error")
+                let lastPushDate = StalenessAnalyzer.extractLastCommitDate(from: json)
+                return Models.RepoStatus(
+                    url: repository.canonicalURL,
+                    status: isArchived ? "Archived" : nil,
+                    lastCommitDate: lastPushDate,
+                    isArchived: isArchived,
+                    exists: true
+                )
 
             case 404:
-                return Models.RepoStatus(url: url, status: "Not Found", exists: false)
+                // GitHub also returns 404 for some private/inaccessible repositories.
+                return Models.RepoStatus(url: repository.canonicalURL, status: "Not Found", exists: false)
+
             case 403:
-                return Models.RepoStatus(url: url, status: "Forbidden (rate limit?)", exists: false)
+                let remaining = httpResponse.value(forHTTPHeaderField: "X-RateLimit-Remaining")
+                if remaining == "0" {
+                    return inconclusive(repository, "GitHub API rate limit reached")
+                }
+                return inconclusive(repository, "HTTP 403; access restriction or rate limit")
+
+            case 429:
+                return inconclusive(repository, "GitHub API rate limit reached (HTTP 429)")
+
             default:
-                return Models.RepoStatus(url: url, status: "Error \(httpResponse.statusCode)", exists: false)
+                return inconclusive(repository, "GitHub API returned HTTP \(httpResponse.statusCode)")
             }
         } catch {
-            return Models.RepoStatus(url: url, status: "Exception: \(error.localizedDescription)", exists: false)
+            return inconclusive(repository, "network error: \(error.localizedDescription)")
         }
+    }
+
+    private static func inconclusive(_ repository: GitHubRepositoryURL, _ reason: String) -> Models.RepoStatus {
+        Models.RepoStatus(
+            url: repository.canonicalURL,
+            status: "Check Inconclusive (\(reason))",
+            exists: false
+        )
     }
 }

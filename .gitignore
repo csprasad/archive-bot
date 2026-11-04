@@ -1,6 +1,3 @@
-# Cache file (committed but listed for reference)
-.cache.json
-
 # Swift Package Manager
 .build/
 .swiftpm/
@@ -23,9 +20,6 @@ DerivedData/
 .build/checkouts/
 .build/repositories/
 
-# Cache files (DO NOT ignore .cache.json - we want this committed)
-# .cache.json is intentionally NOT here - we need it for rate limit protection
-
 # macOS
 .DS_Store
 *.swp
@@ -38,3 +32,6 @@ DerivedData/
 # Temporary files
 *.tmp
 *.temp
+
+# Archive bot cache
+.cache.json

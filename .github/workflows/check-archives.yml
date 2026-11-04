@@ -2,7 +2,7 @@ name: Check Archived Repositories
 
 on:
   schedule:
-    - cron: '0 0 * * 0,2,4'  # (Sun/Tue/Thu at 00:00 UTC)
+    - cron: '0 0 * * 0,2,4'  # Sun/Tue/Thu at 00:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -17,6 +17,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Restore repository cache
+        uses: actions/cache@v4
+        with:
+          path: .cache.json
+          key: archive-bot-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            archive-bot-${{ runner.os }}-
+
       - name: Set up Swift
         uses: swift-actions/setup-swift@v2
         with:
@@ -30,13 +38,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit and push changes
+      - name: Commit and push README changes
         run: |
-          git config --global user.name 'archive-bot'
-          git config --global user.email 'archive-bot@users.noreply.github.com'
+          git config user.name 'archive-bot'
+          git config user.email 'archive-bot@users.noreply.github.com'
           git add README.md
-          git add .cache.json || true
-          git diff --cached --quiet || git commit -m '[auto][ci]: update archived repositories status'
+
+          if git diff --cached --quiet; then
+            echo "No README changes to commit."
+            exit 0
+          fi
+
+          git commit -m '[auto][ci]: update archived repositories status'
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

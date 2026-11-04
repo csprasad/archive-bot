@@ -4,13 +4,15 @@ import PackageDescription
 let package = Package(
     name: "archive-bot",
     platforms: [.macOS(.v13)],
-    dependencies: [
-        // Add any dependencies here
-    ],
+    dependencies: [],
     targets: [
         .executableTarget(
             name: "archive-bot",
             dependencies: []
+        ),
+        .testTarget(
+            name: "archive-botTests",
+            dependencies: ["archive-bot"]
         )
     ]
 )
