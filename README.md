@@ -14,15 +14,21 @@ This report highlights repositories that may need attention. The stale check use
 
 | # | Repository | Status |
 |---:|---|---|
-| 1 | https://github.com/cranci1/Sora | Archived |
-| 2 | https://github.com/shagedorn/StateRestorationDemo | Archived |
+| 1 | https://github.com/basarsubasi/simplefitnessapp | Archived |
+| 2 | https://github.com/bracketltd/BreadBuddy | Archived |
 
 ### ⚠️ Stale Repositories (8+ years without recorded push)
 
 > No stale repositories found.
 
-**Last updated:** November 4, 2026 at 6:16 AM UTC
-**Last checked:** November 5, 2026 at 4:06 AM UTC
+### ‼️ Unavailable Repositories (HTTP 404)
+
+| # | Repository | Result |
+|---:|---|---|
+| 1 | https://github.com/onehumanbeing/esp32-iphone-agent | Not Found / inaccessible |
+
+**Last updated:** November 18, 2026 at 5:55 AM UTC
+**Last checked:** November 18, 2026 at 5:55 AM UTC
 <!-- ARCHIVE-BOT:REPORT:END -->
 
 ## Understanding the Results
