@@ -21,14 +21,8 @@ This report highlights repositories that may need attention. The stale check use
 
 > No stale repositories found.
 
-### ‼️ Unavailable Repositories (HTTP 404)
-
-| # | Repository | Result |
-|---:|---|---|
-| 1 | https://github.com/onehumanbeing/esp32-iphone-agent | Not Found / inaccessible |
-
-**Last updated:** November 18, 2026 at 5:55 AM UTC
-**Last checked:** November 18, 2026 at 5:55 AM UTC
+**Last updated:** November 19, 2026 at 4:55 AM UTC
+**Last checked:** November 19, 2026 at 4:55 AM UTC
 <!-- ARCHIVE-BOT:REPORT:END -->
 
 ## Understanding the Results
