@@ -14,15 +14,14 @@ This report highlights repositories that may need attention. The stale check use
 
 | # | Repository | Status |
 |---:|---|---|
-| 1 | https://github.com/basarsubasi/simplefitnessapp | Archived |
-| 2 | https://github.com/bracketltd/BreadBuddy | Archived |
+| 1 | https://github.com/bracketltd/BreadBuddy | Archived |
 
 ### ⚠️ Stale Repositories (8+ years without recorded push)
 
 > No stale repositories found.
 
-**Last updated:** November 19, 2026 at 4:55 AM UTC
-**Last checked:** November 19, 2026 at 4:55 AM UTC
+**Last updated:** November 22, 2026 at 3:55 AM UTC
+**Last checked:** November 22, 2026 at 3:55 AM UTC
 <!-- ARCHIVE-BOT:REPORT:END -->
 
 ## Understanding the Results
