@@ -12,16 +12,14 @@ This report highlights repositories that may need attention. The stale check use
 
 ### 🏛️ Archived Repositories
 
-| # | Repository | Status |
-|---:|---|---|
-| 1 | https://github.com/bracketltd/BreadBuddy | Archived |
+> No archived repositories found.
 
 ### ⚠️ Stale Repositories (8+ years without recorded push)
 
 > No stale repositories found.
 
-**Last updated:** November 22, 2026 at 3:55 AM UTC
-**Last checked:** November 24, 2026 at 7:29 AM UTC
+**Last updated:** November 26, 2026 at 5:51 AM UTC
+**Last checked:** November 26, 2026 at 5:51 AM UTC
 <!-- ARCHIVE-BOT:REPORT:END -->
 
 ## Understanding the Results
